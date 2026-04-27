@@ -1,0 +1,37 @@
+{
+  "id": "id.acces-maroc.ma_login",
+  "url": "https://id.acces-maroc.ma/login",
+  "final_url": "https://id.acces-maroc.ma/login",
+  "domain": "id.acces-maroc.ma",
+  "title": "Accès Maroc",
+  "category": "service_public",
+  "page_type": "authentification",
+  "language": "fr",
+  "priority": "faible",
+  "responsible_entity": "SERVICE_PUBLIC",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [
+    "Vérifiez toujours que vous êtes sur le bon site: https://www.acces-maroc.ma",
+    "Votre mot de passe est la clé d'accés à votre compte et doit rester personnel, ne le communiquez à personne!"
+  ],
+  "content_sections": [
+    "## Nos Conseils de sécurité",
+    "- Vérifiez toujours que vous êtes sur le bon site: https://www.acces-maroc.ma",
+    "- Vérifier que le lien commence bien par https et non que pas http",
+    "- Votre mot de passe est la clé d'accés à votre compte et doit rester personnel, ne le communiquez à personne!"
+  ],
+  "keywords": [
+    "maroc"
+  ],
+  "content": "## Nos Conseils de sécurité\n- Vérifiez toujours que vous êtes sur le bon site: https://www.acces-maroc.ma\n- Vérifier que le lien commence bien par https et non que pas http\n- Votre mot de passe est la clé d'accés à votre compte et doit rester personnel, ne le communiquez à personne!",
+  "content_length": 283,
+  "list_items_count": 3,
+  "http_status": 200,
+  "status": "skipped",
+  "skip_reason": "authentication_page",
+  "fetched_at": "2026-04-27T09:01:00.401875+00:00"
+}

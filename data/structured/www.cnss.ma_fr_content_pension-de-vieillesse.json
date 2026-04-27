@@ -1,0 +1,30 @@
+{
+  "id": "www.cnss.ma_fr_content_pension-de-vieillesse",
+  "url": "https://www.cnss.ma/fr/content/pension-de-vieillesse",
+  "final_url": "https://www.cnss.ma/fr/content/pension-de-vieillesse",
+  "domain": "www.cnss.ma",
+  "title": "Pension de vieillesse CNSS",
+  "category": "cnss",
+  "page_type": "prestation",
+  "language": "fr",
+  "priority": "haute",
+  "responsible_entity": "CNSS",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [],
+  "keywords": [
+    "cnss",
+    "pension"
+  ],
+  "content": "",
+  "content_length": 0,
+  "list_items_count": 0,
+  "http_status": 200,
+  "status": "skipped",
+  "skip_reason": "content_too_short",
+  "fetched_at": "2026-04-27T09:00:58.244098+00:00"
+}

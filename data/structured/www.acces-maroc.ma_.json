@@ -1,0 +1,35 @@
+{
+  "id": "www.acces-maroc.ma_",
+  "url": "https://www.acces-maroc.ma/",
+  "final_url": "https://www.acces-maroc.ma/",
+  "domain": "www.acces-maroc.ma",
+  "title": "Accès Maroc",
+  "category": "service_public",
+  "page_type": "portail",
+  "language": "fr",
+  "priority": "moyenne",
+  "responsible_entity": "SERVICE_PUBLIC",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [
+    "## {{\"NEED_EVISA\" | translate }}",
+    "# {{IndexCtrl.titles | translate }}",
+    "- {{ breadcrumb.label | translate}} {{ breadcrumb.label | translate}}",
+    "### {{ 'LIENS_UTILES' | translate }}"
+  ],
+  "keywords": [
+    "maroc",
+    "visa"
+  ],
+  "content": "## {{\"NEED_EVISA\" | translate }}\n# {{IndexCtrl.titles | translate }}\n- {{ breadcrumb.label | translate}} {{ breadcrumb.label | translate}}\n### {{ 'LIENS_UTILES' | translate }}",
+  "content_length": 175,
+  "list_items_count": 1,
+  "http_status": 200,
+  "status": "success",
+  "skip_reason": null,
+  "fetched_at": "2026-04-27T09:01:00.393590+00:00"
+}

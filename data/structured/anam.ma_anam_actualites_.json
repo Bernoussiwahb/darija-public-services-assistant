@@ -1,0 +1,34 @@
+{
+  "id": "anam.ma_anam_actualites_",
+  "url": "https://anam.ma/anam/actualites/",
+  "final_url": "https://anam.ma/anam/actualites/",
+  "domain": "anam.ma",
+  "title": "Actualités – anam",
+  "category": "anam",
+  "page_type": "actualite",
+  "language": "fr",
+  "priority": "faible",
+  "responsible_entity": "ANAM",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [
+    "L’Agence Nationale de l'Assurance Maladie (ANAM) a accueilli, le Jeudi 3 Octobre 2024, une délégation composée de membres et d'experts de la Commission Permanente des Affaires Sociales et de la...",
+    "L’Agence Nationale de l’Assurance Maladie (ANAM) a accueilli, le Mardi 8 octobre 2024, une délégation de la Caisse Nationale de la Sécurité Sociale (CNSS) de Djibouti, dirigée par son Directeur...",
+    "Docteur Khalid LAHLOU, Directeur Général de l’Agence Nationale de l’Assurance Maladie (ANAM) a pris part aux travaux de la première conférence internationale sur l’économie des soins et la protection sociale,..."
+  ],
+  "keywords": [
+    "anam",
+    "assurance maladie"
+  ],
+  "content": "L’Agence Nationale de l'Assurance Maladie (ANAM) a accueilli, le Jeudi 3 Octobre 2024, une délégation composée de membres et d'experts de la Commission Permanente des Affaires Sociales et de la...\nL’Agence Nationale de l’Assurance Maladie (ANAM) a accueilli, le Mardi 8 octobre 2024, une délégation de la Caisse Nationale de la Sécurité Sociale (CNSS) de Djibouti, dirigée par son Directeur...\nDocteur Khalid LAHLOU, Directeur Général de l’Agence Nationale de l’Assurance Maladie (ANAM) a pris part aux travaux de la première conférence internationale sur l’économie des soins et la protection sociale,...",
+  "content_length": 605,
+  "list_items_count": 0,
+  "http_status": 200,
+  "status": "success",
+  "skip_reason": null,
+  "fetched_at": "2026-04-27T09:00:59.207258+00:00"
+}

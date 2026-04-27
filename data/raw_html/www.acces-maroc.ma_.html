@@ -1,0 +1,118 @@
+<!doctype html><html lang={{langue}} ng-app=maeciPortail ng-class="{x2: fontSize == 'x2'} " class="{{(langue=='ar')?'rtl':'ltr' }}" dir="{{(langue=='ar')?'rtl':'ltr'}}"><head><meta http-equiv=content-type content="text/html; charset=UTF8"><title>Accès Maroc</title><meta name=description content="Portail de MAECI pour faciliter les demandes des visa, eVisa, eVisa évèmenet et autorisation pour acceder au Maroc"><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta http-equiv=X-UA-Compatible content="IE=9"><script type=application/ld+json>[]</script><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/vendor-993e45f20d.css><link rel=stylesheet href=styles/app-df2e39f4c6.css></head><body ng-controller="IndexController as IndexCtrl" class="page-{{IndexCtrl.titles | lowercase}}" data-ng-cloak><!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]--><acme-navbar creation-date=main.creationDate></acme-navbar><div ng-show=false><!-- <oauth2 authorization-url="{{IndexCtrl.openIdUrl}}/authorize" sign-out-url="{{IndexCtrl.openIdUrl}}/endsession" sign-out-redirect-url="{{IndexCtrl.redirecUrl}}" sign-out-append-token="true" client-id="{{IndexCtrl.clientId}}" redirect-url="{{IndexCtrl.redirecUrl}}/#/"
+            response-type="token" scope="api.application-service.v1.referentiel.posteFrontiere.read api.application-service.v1.referentiel.typeEntreesDemandees.read api.application-service.v1.referentiel.ville.read api.application-service.v1.referentiel.region.read api.application-service.v1.demandeVisa.demandeVisa.read api.application-service.v1.referentiel.situationFamiliale.read api.application-service.v1.referentiel.profession.read api.application-service.v1.agenda.rendezVous.create api.application-service.v1.agenda.agenda.read api.application-service.v1.notification.contactezNous.read api.application-service.v1.demandeVisa.dossierDemandeVisa.delete api.application-service.v1.agenda.rendezVous.read api.application-service.v1.referentiel.etat.read api.application-service.v1.referentiel.pays.read api.application-service.v1.referentiel.moyenTransport.read api.application-service.v1.referentiel.codePostal.read api.application-service.v1.demandeVisa.dossierDemandeVisa.read api.application-service.v1.agenda.agenda.create api.application-service.v1.demandeVisa.dossierDemandeVisa.create api.application-service.v1.referentiel.sex.read api.application-service.v1.agenda.localisations.read api.application-service.v1.referentiel.typeGroupement.read api.application-service.v1.referentiel.financeur.read api.application-service.v1.administration.utilisateur.read api.application-service.v1.administration.utilisateur.update api.application-service.v1.referentiel.moyensFinancement.read api.application-service.v1.referentiel.posteConsulaire.read api.application-service.v1.demandeVisa.dossierDemandeVisa.update api.application-service.v1.referentiel.motifVoyage.read api.application-service.v1.agenda.rendezVous.cancel api.application-service.v1.notification.notification.read api.application-service.v1.referentiel.evenement.read
+			api.application-service.v1.notification.notification.create attachment.v1 attachment.v1.write openid profile">
+        </oauth2> --></div><section class=title><div class=container><div ng-if="IndexCtrl.titles == 'ACCUEIL'" class=home-search ng-init=" IndexCtrl.getReferentiel()"><h2>{{"NEED_EVISA" | translate }}</h2><form name=myForm><div class="row row-equal-height"><div class=col-md-10><div class=row><div class="form-group col-md-4 col-sm-6"><label>{{"NATIONALITE"| translate }} <span class=required>*</span></label><select class=form-control ng-model=IndexCtrl.nationaliteSelected ng-options="item as item.libelle for item in IndexCtrl.nationalites track by item.id" ng-required=true ng-change=IndexCtrl.onChangeNationalite()><option value="" disabled selected><!-- -- {{"CHOISIR_NATIONALITE_ACTUELLE" | translate }}-- --></option></select></div><div class="form-group col-md-4 col-sm-6"><label>{{"PAYS_RESIDENCE"| translate }} <span class=required>*</span></label><select class=form-control ng-model=IndexCtrl.paysResidenceSelected ng-options="item as item.libelle for item in IndexCtrl.paysWithoutMorocco track by item.id" ng-required=true><option value="" selected><!-- -- {{"CHOISIR_PAYS_RESIDENCE" | translate }}-- --></option></select></div><!-- <div class="form-group col-md-4 col-sm-6">
+                                    <label>{{"DATE_NAISSANCE"| translate }} <span class="required">*</span></label>
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{IndexCtrl.format}}" ng-model="IndexCtrl.dateNaissance" is-open="IndexCtrl.popup1.opened" datepicker-options="IndexCtrl.dateOptions" show-button-bar="false" ng-click="IndexCtrl.openDateNaissance()"
+                                        ng-required="true" readonly/>
+                                </div> --><div class="form-group col-md-4 col-sm-6"><label>{{"TYPE_PASSEPORT"| translate }} <span class=required>*</span></label><select class=form-control ng-model=IndexCtrl.typePasseportSelected ng-options="item as item.libelle for item in IndexCtrl.typePasseport track by item.id" ng-required=true><option value="" disabled selected><!-- -- {{"CHOISIR_TYPE_PASSEPORT" | translate }} -- --></option></select></div><div ng-if=IndexCtrl.showEvisaEvent class="form-group col-md-5 col-sm-6"><label>{{"PARTICIPEZ_VOUS_A_UN_EVENEMENT_AU_MAROC"| translate }} <span class=required>*</span></label><select class=form-control ng-model=IndexCtrl.evenementSelected ng-options="item as item.libelle for item in IndexCtrl.evenements track by item.id" ng-change=IndexCtrl.onChnageEvent() ng-required=true><option value="" selected></option>></select></div><div class="form-group col-sm-6" ng-class="{'col-md-3' : IndexCtrl.showEvisaEvent === true, 'col-md-4' : IndexCtrl.showEvisaEvent !== true}"><label>{{"MOTIF_VOYAGE"| translate }} <span class=required>*</span></label><select class=form-control ng-model=IndexCtrl.categorieVisaSelected ng-options="item as item.libelle for item in IndexCtrl.categorieVisa track by item.id" ng-required=true><option value="" selected><!-- -- {{"CHOISIR_PAYS_RESIDENCE" | translate }}-- --></option></select></div><div class="form-group col-md-4 col-sm-6"><label>{{"DISPOSEZ_VOUS_AUTRE_VISA_VALIDE"| translate }} <span class=required>*</span></label><select class=form-control ng-model=IndexCtrl.visaAdditionnelSelected ng-options="item as item.libelle for item in IndexCtrl.visaAdditionnel track by item.id" ng-required=true><option value="" selected><!-- -- {{"CHOISIR_PAYS_RESIDENCE" | translate }}-- --></option></select></div></div></div><div class=col-md-2><button type=button class="btn btn-default btn-search" ng-click=IndexCtrl.valider() ng-disabled=myForm.$invalid>{{"VERIFIER_ADMISSIBILITE" | translate}}</button></div></div></form></div><h1 ng-if="IndexCtrl.titles != 'ACCUEIL'">{{IndexCtrl.titles | translate }}</h1><ul id=breadcrumb><li ng-repeat="breadcrumb in IndexCtrl.breadcrumbs.get() track by breadcrumb.path" ng-class="{ active: $last }"><div ng-show="IndexCtrl.breadcrumbs.get().length !=1"><a ng-if=!$last ng-href="#{{ breadcrumb.path }}" class="margin-right-xs sizeBreadcrumbs lien-bread-crumb">{{ breadcrumb.label | translate}} </a><span ng-if=$last class=sizeBreadcrumbs>{{ breadcrumb.label | translate}}</span> <input ng-if=$last type=hidden id=testingInput2 ng-model=IndexCtrl.titles ng-value="IndexCtrl.titles=breadcrumb.label"> <span ng-if=!$last><a href=#><span class="glyphicon glyphicon-play"></span></a></span></div></li></ul></div></section><div class=view-class><div id=view ng-view></div></div><section id=infos-utiles><div class=container><div class=row><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"><h3>{{ 'LIENS_UTILES' | translate }}</h3></div></div><div class=row><div class="col-sm-4 item"><a href=https://www.consulat.ma/ target=_blank rel=noreferrer><img src=assets/img/portail-consulat.png class="img-responsive center-block" alt="Portail consulaire du Maroc"> <span>{{ 'LIENS_UTILES_CONSULAT' | translate }}</span></a></div><div class="col-sm-4 item"><a href=https://www.diplomatie.ma/ target=_blank rel=noreferrer><img src=assets/img/portail-diplomatie.png class="img-responsive center-block" alt="Portail officiel du Ministre des Affaires Etrangères"> <span>{{ 'LIENS_UTILES_DIPLOMATIE' | translate }}</span></a></div><div class="col-sm-4 item"><a href=https://mtataes.gov.ma/ target=_blank rel=noreferrer><img src=assets/img/portail-mtataes.png class="img-responsive center-block" alt="Portail officiel du Ministère de Tourisme"> <span>{{ 'LIENS_UTILES_MTATAES' | translate }}</span></a></div></div></div></section><loader></loader><acme-cookie></acme-cookie><footer><!-- <div class="container-fluid">
+            <div class="row ft-row">
+                <div class="col-sm-3 ft-div av-ecout">
+                    <h4>{{ 'A_VOTRE_ECOUTE' | translate }}</h4>
+                    <ul>
+                        <li><a href="#/questionsfrequentes#FAQ">{{ 'faq' | translate }}</a><br /></li>
+                        <li><a href="#/contacteznous#contact">{{ 'NOUS_CONTACTER' | translate }} </a></li>
+                        <li><a href="#archive">{{ 'CONDITIONS_UTILISATION' | translate }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ft-div ">
+                    <img src="assets/images/visa_aevm.png" />
+                </div>
+
+                <div class="col-sm-3 royaume hidden-xs ft-div">
+                    <div class="row">
+                        <div class="col-md-5 pull-left conteneur-image-royaume">
+                            <img src="assets/images/logo-royaume-footer.png" />
+                        </div>
+                        <div class="col-md-9 conteneur-ministere">
+                            <p class="rdm">{{"ROYAUME" | translate }} </p>
+                            <p class="RoyaumStyleHousseine">{{ "MINISTERE" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "COOPERATION" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "MAROCAIN" | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 ft-div">
+                    <h4>{{ 'SERVICE_ET_FORMULAIRE' | translate }}</h4>
+                    <ul>
+                        <li><a href="http://www.consulat.ma">Consulat.ma</a><br /></li>
+                        <li><a href="https://www.diplomatie.ma">Diplomatie.ma</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-sm-3 royaume-xs visible-xs-block">
+                    <div class="">
+                        <div class="col-xs-6 royaume-footer">
+                            <img src="assets/images/logo-royaume-footer.png" class="img-responsive img-center" />
+                            <p class="rdm">{{"ROYAUME" | translate }} </p>
+                            <p class="RoyaumStyleHousseine">{{ "MINISTERE" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "COOPERATION" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "MAROCAIN" | translate }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ft-row-responsive">
+                <div class="col-sm-3 ft-div av-ecout">
+                    <h4>{{ 'A_VOTRE_ECOUTE' | translate }}</h4>
+                    <ul>
+                        <li><a href="#/questionsfrequentes#FAQ">{{ 'faq' | translate }}</a><br /></li>
+                        <li><a href="#/contacteznous#contact">{{ 'NOUS_CONTACTER' | translate }} </a></li>
+                        <li><a href="#archive">{{ 'CONDITIONS_UTILISATION' | translate }}</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 ft-div">
+                    <h4>{{ 'SERVICE_ET_FORMULAIRE' | translate }}</h4>
+                    <ul>
+                        <li><a href="http://www.consulat.ma">Consulat.ma</a><br /></li>
+                        <li><a href="https://www.diplomatie.ma">Diplomatie.ma</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 royaume hidden-xs ft-div">
+                    <div class="row">
+                        <div class="col-md-5 pull-left conteneur-image-royaume">
+                            <img src="assets/images/logo-royaume-footer.png" />
+                        </div>
+                        <div class="col-md-9 conteneur-ministere">
+                            <p class="rdm">{{"ROYAUME" | translate }} </p>
+                            <p class="RoyaumStyleHousseine">{{ "MINISTERE" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "COOPERATION" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "MAROCAIN" | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 ft-div visa-logo-footer-conteneur">
+                    <img src="assets/images/visa_aevm.png" />
+                </div>
+
+                <div class="col-sm-3 royaume-xs visible-xs-block">
+                    <div class="">
+                        <div class="col-xs-6 royaume-footer">
+                            <img src="assets/images/logo-royaume-footer.png" class="img-responsive img-center" />
+                            <p class="rdm">{{"ROYAUME" | translate }} </p>
+                            <p class="RoyaumStyleHousseine">{{ "MINISTERE" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "COOPERATION" | translate }}</p>
+                            <p class="RoyaumStyleHousseine">{{ "MAROCAIN" | translate }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> --><div class="container-fluid copyright text-center"><p>{{ "COPYRIGHT" | translate }}</p></div></footer><script src=scripts/vendor-119b9cac24.js></script><script src=scripts/app-05bf6b94ad.js></script><script src=/assets/static/env.js type=text/javascript></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-128471646-1"></script><script>window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128471646-1');</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"05814a6ba0594550a424aca56665132d","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>

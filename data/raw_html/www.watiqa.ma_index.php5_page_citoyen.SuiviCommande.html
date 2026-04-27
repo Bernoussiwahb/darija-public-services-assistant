@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<title>Guichet électronique de commande de documents administratifs - Demande</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<link href="themes/css/loader.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="themes/citoyen/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+	<link rel="stylesheet" type="text/css" href="themes/responsive/css/keyboard.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/responsive/css/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/citoyen/css/jquery-ui.min.css"/>
+	<script type="text/javascript" src="themes/citoyen/js/jquery-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="themes/citoyen/css/intlTelInput.css"/>
+	
+	<script type="text/javascript" src="themes/citoyen/js/intlTelInput.min.js"></script>
+	<script type="text/javascript" src="themes/js/atexoScript.fr.js"></script>
+<style>
+	.ui-keyboard {
+		background: #eeeeee!important;
+	}
+	.keyboard-ar {
+		direction: rtl!important;
+	}
+</style>
+	<script type="text/javascript" src="themes/js/loader.js"></script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29629494-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+
+<body>
+<form id="ctl0_formGlobal" method="post" action="/index.php5?page=citoyen.SuiviCommande"><div style="visibility:hidden;">
+<input type="hidden" name="PRADO_PAGESTATE" id="PRADO_PAGESTATE" value="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" />
+<input type="hidden" name="PRADO_POSTBACK_TARGET" id="PRADO_POSTBACK_TARGET" value="" />
+<input type="hidden" name="PRADO_POSTBACK_PARAMETER" id="PRADO_POSTBACK_PARAMETER" value="" />
+</div>
+<script type="text/javascript" src="/assets/8e28fffb/clientscripts.php?js=prado,ajax,validator"></script>
+
+<!--Start Header-->
+	<header>
+		<div class="navbar-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav class="navbar navbar-expand-lg">
+							<div>
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+										aria-label="Toggle navigation">
+									<span class="toggler-icon"></span>
+									<span class="toggler-icon"></span>
+									<span class="toggler-icon"></span>
+								</button>
+								<a class="navbar-brand" href="index.php5?page=citoyen.AccueilEtatCivil">
+									<img src="themes/citoyen/images/logos/logo-watiqa.png" alt="Watiqa.ma" />
+								</a>
+							</div>
+							<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+								<ul id="nav" class="navbar-nav ml-auto mr-auto">
+									<li class="nav-item active">
+										<a class="page-scroll" href="index.php5?page=citoyen.AccueilEtatCivil">Accueil </a>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" href="#">Le guichet </a>
+										<ul class="sub-menu">
+											<li class="nav-item"><a href="index.php5?page=citoyen.GuichetActe">Acte de naissance</a></li>
+											
+											<li class="nav-item"><a href="index.php5?page=citoyen.GuichetAic">Attestation d'immatriculation consulaire</a></li>
+											
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" href="index.php5?page=citoyen.About">A propos</a>
+									</li>
+									<li class="nav-item d-none">
+										<a class="page-scroll" href="index.php5?page=citoyen.Partners">Partenaires</a>
+									</li>
+									<li class="nav-item">
+										<a class="page-scroll" href="index.php5?page=citoyen.Faq">F.A.Q</a>
+									</li>
+									<li class="nav-item mx-3">
+										<a id="ctl0_toAr" class="page-scroll btn btn-raised btn-default ar" href="javascript:;//ctl0_toAr" style="display:;"><b>
+												النسخة العربية
+											</b></a>
+										<a id="ctl0_toFr" class="page-scroll btn btn-raised btn-default ar" alt="Français" title="Français" href="javascript:;//ctl0_toFr" style="display:none;">
+											النسخة العربية
+										</a>
+
+									</li>
+								</ul>
+							</div>
+							<img src="themes/citoyen/images/logos/logo-royaume2.png" alt="Logo" height="80" />
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<!--End Header-->
+
+
+    <section class="Material-tabs-section section-padding section-dark" id="guichet">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 Material-title-section wow animated  fadeInLeft" datz-wow-delay=".2s">
+                    <h1 class="section-title text-center">
+                        Suivi de ma commande
+                    </h1>
+                </div>
+            </div>
+            <div class="col-sm-12 form-box">
+                <div id="mainContent" class="f1">
+				<!--Debut message Erreur-->
+<div id="ctl0_CONTENU_PAGE_panelMessageErreur_panelMessage" class="form-bloc-erreur">
+    <div class="col-12 mb-4 p-3 pr-5 alert alert-danger d-flex align-items-start">
+        	<div class="top"><span class="left">&nbsp;</span><span class="right">&nbsp;</span></div>
+            <div class="content">
+            	<img src="themes/images/picto-erreur.gif" class="picto-erreur" alt="Erreur" />
+					<span><span id="ctl0_CONTENU_PAGE_panelMessageErreur_labelMessage" style="color:red">Aucune commande enregistrée pour les informations saisies</span></span>
+                <div class="breaker"></div>
+            </div>
+        <div class="bottom"><span class="left">&nbsp;</span><span class="right">&nbsp;</span></div>
+    </div>
+</div>
+<!--Fin message Erreur-->
+
+
+
+                    
+                    <div id="ctl0_CONTENU_PAGE_panelMessageError" class="row" style="display:none;">
+                        <div class="col-12 mb-4 p-3 pr-5 alert alert-danger d-flex align-items-start">
+                            <i class="mdi mdi-information-outline mr-2 mb-0 h4"></i>
+                            <div>
+                                <p class="h5">
+                                    Demande erronée
+                                </p>
+                                <p>
+                                    <span id="ctl0_CONTENU_PAGE_cmdErrMsg"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ctl0_CONTENU_PAGE_panelResultSearch" class="bloc" style="display:none;">
+                        <h6>Récapitulatif de votre commmande</h6>
+<hr />
+<div class="row">
+	<div class="col-md-6">
+		<fieldset>
+			<legend>
+				<h6>Identification du demandeur </h6>
+			</legend>
+			<div class="item">
+				<label class="control-label">Nom et Prénom  :</label>
+				<ul class="pl-3 m-0">
+					<li><span id="ctl0_CONTENU_PAGE_infoDemande_nomTutilaire"></span> <span id="ctl0_CONTENU_PAGE_infoDemande_prenomTutilaire"></span></li>
+					<li>Né le : <span id="ctl0_CONTENU_PAGE_infoDemande_dateNaissance"></span></li>
+				</ul>
+			</div>
+		</fieldset>
+	</div>
+	<div class="col-md-6">
+		<fieldset>
+			<legend>
+				<h6>Document demandé</h6>
+			</legend>
+			<div class="item">
+				<label class="control-label">Type et nombre d'exemplaires :</label>
+				<ul class="pl-3 m-0">
+					<li>
+						<strong><span id="ctl0_CONTENU_PAGE_infoDemande_nbreExtrait"></span></strong> extrait(s) d'acte de naissance
+					</li>
+					<li>
+						<strong><span id="ctl0_CONTENU_PAGE_infoDemande_nbreCopie"></span></strong> copie(s) intégrale(s)
+					</li>
+				</ul>
+			</div>
+		</fieldset>
+	</div>
+	<div class="col-md-6">
+		<fieldset>
+			<legend>
+				<h6>Adresse de livraison</h6>
+			</legend>
+			<div class="item">
+				<div class="mt-2"><span id="ctl0_CONTENU_PAGE_infoDemande_adresseContact"></span> </div>
+				<div><span id="ctl0_CONTENU_PAGE_infoDemande_localiteLivraison"></span> <span id="ctl0_CONTENU_PAGE_infoDemande_codePostalContact"></span> <span id="ctl0_CONTENU_PAGE_infoDemande_paysLivraison"></span></div>
+				<div class="mt-2"><span id="ctl0_CONTENU_PAGE_infoDemande_adresse_2Contact"></span> </div>
+			</div>
+		</fieldset>
+	</div>
+	
+
+	
+</div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <legend>
+                                        <h6>
+                                            Statut de votre commande
+                                        </h6>
+                                    </legend>
+                                    <div class="acte-track p-4 text-center">
+	<ul class="timeline my-3">
+	
+	</ul>
+</div>
+
+                                </fieldset>
+                            </div>
+
+                            <div id="ctl0_CONTENU_PAGE_panelCourrierRecommande" class="col-md-6">
+                                <fieldset>
+                                    <legend>
+                                        <h6>
+                                            Statut de votre courrier
+                                        </h6>
+                                    </legend>
+                                    <div class="acte-track p-4 text-center">
+	<ul class="timeline my-3">
+		
+	</ul>
+</div>
+
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div id="ctl0_CONTENU_PAGE_panelSoumettreReclamation">
+                            <br>
+                            <fieldset>
+                                <legend>
+                                    <h3>
+                                        Réclamation
+                                    </h3>
+                                </legend>
+                                <div id="mainContent" >
+
+    <div id="ctl0_CONTENU_PAGE_reclamation_panelConfirmationReclamation" style="display:none;">
+        <div id="ctl0_CONTENU_PAGE_reclamation_msgConfirmation" style="display:none;">
+            <div class="mb-4 p-3 pr-5 alert alert-success d-flex align-items-start">
+                <i class="mdi mdi-information-outline mr-2 mb-0 h4"></i>
+                <div>
+                    <p><strong>Votre message a bien été envoyé</strong></p>
+                    <p>Pour suivre l'avancement de votre requête, merci de vous rendre sur la page de   <a href="https://www.watiqa.ma/index.php5?page=citoyen.SuiviCommande">suivi de votre commande</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div id="ctl0_CONTENU_PAGE_reclamation_msgErreur" style="display:none;">
+            <div class="mb-4 p-3 pr-5 alert alert-danger d-flex align-items-start">
+                <i class="mdi mdi-information-outline mr-2 mb-0 h4"></i>
+                <div>
+                    <p><strong>Votre message n'a pas pu être envoyé.</strong></p>
+                    <p>Erreur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ctl0_CONTENU_PAGE_reclamation_panelReclamation">
+
+            <div class="form-group row">
+                <label for="select" class="col-2 col-form-label">Objet :</label>
+                <div class="col-8">
+                    <select name="ctl0$CONTENU_PAGE$reclamation$objet" id="ctl0_CONTENU_PAGE_reclamation_objet" class="form-control"></select>
+                    <span id="ctl0_CONTENU_PAGE_reclamation_ctl6" style="display:none;color:red;"><span title='Champ obligatoire' class='check-invalide'><img src='themes/images/picto-check-not-ok.gif' alt='Champ obligatoire' /></span></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="select" class="col-2 col-form-label">Message :</label>
+                <div class="col-8">
+                    <textarea name="ctl0$CONTENU_PAGE$reclamation$message" rows="4" cols="20" id="ctl0_CONTENU_PAGE_reclamation_message" class="form-control">
+</textarea>
+                </div>
+            </div>
+            
+        <hr>
+        <div class="action d-flex justify-content-between">
+            <a id="ctl0_CONTENU_PAGE_reclamation_etapePrecedente" class="btn btn-raised btn-default btn-sm p-3" href="javascript:;//ctl0_CONTENU_PAGE_reclamation_etapePrecedente">
+                <i class='material-icons mdi mdi-chevron-left'></i>Retour
+                
+                
+                
+            </a>
+            <a id="ctl0_CONTENU_PAGE_reclamation_envoyer" class="btn btn-raised btn-principal btn-sm p-3" href="javascript:;//ctl0_CONTENU_PAGE_reclamation_envoyer">
+                Envoyer <i class='material-icons mdi mdi-chevron-right'></i>
+                
+                
+                
+            </a>
+        </div>
+
+    </div>
+
+    <input type="hidden" name="ctl0$CONTENU_PAGE$reclamation$numCommandeHidden" id="ctl0_CONTENU_PAGE_reclamation_numCommandeHidden" value="0" />
+</div>
+
+
+                            </fieldset>
+                            <br>
+                            <div id="ctl0_CONTENU_PAGE_tableauReclamatione_tableReclamation">
+	<fieldset>
+		<legend><h3>Statut de vos réclamations</h3></legend>
+		
+		
+	</fieldset>
+
+</div>
+                        </div>
+
+                        <div id="ctl0_CONTENU_PAGE_tableauDemandeComplement_panelDemandeComplement" style="display:none;">
+	<br>
+	<fieldset>
+		<legend><h3>Demande de complément</h3></legend>
+<div id="ctl0_CONTENU_PAGE_tableauDemandeComplement_panelDemComp">
+	
+	<div id="ctl0_CONTENU_PAGE_tableauDemandeComplement_insertData">
+		
+		<fieldset>
+			
+			<input type="hidden" name="ctl0$CONTENU_PAGE$tableauDemandeComplement$id_cmd_hidden" id="ctl0_CONTENU_PAGE_tableauDemandeComplement_id_cmd_hidden" />
+			<div>
+				<table class="table">
+					
+				</table>
+				<a id="ctl0_CONTENU_PAGE_tableauDemandeComplement_btnEnvoyer" class="btn btn-raised btn-principal btn-sm p-3" title="Envoyer" href="javascript:;//ctl0_CONTENU_PAGE_tableauDemandeComplement_btnEnvoyer">
+					Envoyer
+				</a>
+			</div>
+		</fieldset>
+		<br/><br/>
+	</div>
+</div>
+	</fieldset>
+</div>
+
+
+
+                        <div class="action d-flex justify-content-between">
+                            <a id="ctl0_CONTENU_PAGE_print" class="btn btn-default btn-raised" onclick="window.print();" href="javascript:;//ctl0_CONTENU_PAGE_print">
+                                <i class="material-icons mdi mdi-cloud-print-outline"></i>
+                                Imprimer
+                            </a>
+                            <a id="ctl0_CONTENU_PAGE_etapePrecedente" class="btn btn-primary btn-raised btn-common" href="javascript:;//ctl0_CONTENU_PAGE_etapePrecedente">
+                                <i class="material-icons mdi mdi-home-export-outline"></i>
+                                Retour à l'accueil
+                                
+                                
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+	<footer class="page-footer center-on-small-only pt-0 footer-widget-container">
+		<div class="container pt-4 pb-2">
+			<div class="row">
+				<div class="col-md-4 link-widget">
+					<img src="themes/citoyen/images/logos/logo-watiqa-w.png" alt="Logo" style="height: 80px; margin-bottom: 5px" />
+					<p style="
+                /* color: #d5d5d5; */
+                /* line-height: 18px; */
+                display: block;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 10px 0 10px 0;
+              ">
+						La plateforme WATIQA est un service en ligne qui permet de commander électroniquement des documents administratifs et de les recevoir par courrier recommandé à l'adresse de son choix.
+					</p>
+					<div class="d-flex" style="gap:20px">
+
+
+						<a id="ctl0_ctl11" class="btn btn-raised btn-sm btn-blodck btn-default ar" href="javascript:;//ctl0_ctl11" style="display:;"><b>
+								النسخة العربية
+							</b></a>
+						<a id="ctl0_ctl13" class="btn btn-raised btn-sm btn-blodck btn-default ar" alt="Français" title="Français" href="javascript:;//ctl0_ctl13" style="display:none;">
+							النسخة العربية
+						</a>
+
+						<a href="index.php5?page=agent.Auth" class="btn btn-raised btn-sm btn-blocdk btn-primary">Accès agent</a>
+					</div>
+				</div>
+				<div class="col-md-3 link-widget">
+					<h5 class="text-warning mb-3">Support</h5>
+					<div class="mt-3"></div>
+					<ul class="icon-list m-0">
+						<li class="mb-0">
+							<i class="mdi mdi-map-marker"></i>Vous avez une demande ou une réclamation concernant le traitement de votre commande ? veuillez accéder à l'espace
+							<a class="btn btn-raised btn-sm btn-blocdk btn-primary" href="?page=citoyen.GuichetActe">Suivre une commande</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-contact">
+					<h5 class="text-warning mb-3">Menu principal</h5>
+					<div class="widget m-0">
+						<ul class="unordered-list m-0">
+							<li>
+								<a href="index.php5?page=citoyen.AccueilEtatCivil" class="nocolor">Accueil </a>
+							</li>
+							<li>
+								<a href="index.php5?page=citoyen.GuichetActe" class="nocolor">Le guichet</a>
+							</li>
+							<li>
+								<a href="index.php5?page=citoyen.About" class="nocolor">A propos</a>
+							</li>
+							<li>
+								<a href="index.php5?page=citoyen.Partners" class="nocolor d-none">Partenaires</a>
+							</li>
+							<li><a href="index.php5?page=citoyen.Faq" class="nocolor">F.A.Q</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 footer-contact">
+					<h5 class="text-warning mb-3">Liens utiles</h5>
+					<div class="widget m-0">
+						<ul class="unordered-list m-0">
+							<li>
+								<a  target="_blank" href="https://www.alhalalmadania.ma" class="nocolor">Portail de l'État civil
+								</a>
+							</li>
+							<li>
+								<a  target="_blank" href="https://www.cnie.ma" class="nocolor">CNIE - Carte Nationale d'Identité
+								</a>
+							</li>
+							<li>
+								<a  target="_blank" href="https://www.passeport.ma" class="nocolor">Portail de passeport biométrique
+								</a>
+							</li>
+							<li>
+								<a  target="_blank" href="https://www.idarati.ma" class="nocolor">Guide des procédures administratives
+								</a>
+							</li>
+							<li>
+								<a  target="_blank" href="https://www.chikaya.ma" class="nocolor">Portail national des réclamations
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				<div class="d-flex justify-content-between">
+					<p>Watiqa.ma - Tous droits réservés 2026</p>
+					<p>
+						
+						<a href="index.php5?page=citoyen.ConditionsUtilisation">Conditions d'utilisation</a>
+						<span class="mx-3">|</span>
+						<a href="#" class="d-none">Contactez-nous</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="preloader">
+		<div class="loader" id="loader-1">
+			<img src="themes/citoyen/images/logos/logo-watiqa.png" alt="Logo" />
+		</div>
+	</div>
+
+	<div>
+		<script type="text/JavaScript" src="themes/js/jquery-compatibility.js"></script>
+
+		<script type="text/javascript" src="themes/citoyen/js/popper.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/jquery.inview.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/jquery.counterup.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/scroll-top.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/material.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/ripples.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/form-validator.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/jquery.vide.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/jquery.slicknav.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/bootstrap-select.js"></script>
+		<script type="text/javascript" src="themes/citoyen/js/main.js"></script>
+
+		<script type="text/javascript" src="themes/responsive/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="themes/responsive/js/jquery.keyboard.js"></script>
+		<script type="text/JavaScript" src="themes/responsive/js/main.js"></script>
+
+		<script >
+			J('.keyboard-ar').addClass('rtl').keyboard({
+				usePreview: true,
+				alwaysOpen: false,
+				autoAccept: true,
+				layout: 'custom',
+				customLayout: {
+					'default': [
+						'1 2 3 4 5 6 7 8 9 0 - = {bksp}',
+						'{tab} \u0636 \u0635 \u062b \u0642 \u0641 \u063a \u0639 \u0647 \u062e \u062d \u062c \u062f \u0630',
+						'\u0634 \u0633 \u064a \u0628 \u0644 \u0627 \u062a \u0646 \u0645 \u0643 \u0637 {enter}',
+						'{shift} \u0626 \u0621 \u0624 \u0631 \ufefb \u0649 \u0629 \u0648 \u0632 \u0638 {shift}',
+						'{accept} {alt} {space} {alt} {cancel}'
+					],
+					'shift': [
+						'\u0651 ! @ # $ % ^ & * ( ) _ + {bksp}',
+						'{tab} \u0636 \u0635 \u062b \u0642 \u0641 \u063a \u0639 \u00f7 \u00d7 \u061b > < |',
+						'\u0634 \u0633 \u064a \u0628 \u0644 \u0623 \u0640 \u060c / : " {enter}',
+						'{shift} \u0626 \u0621 \u0624 \u0631 \ufef5 \u0622 \u0629 , . \u061f {shift}',
+						'{accept} {alt} {space} {alt} {cancel}'
+					],
+					'alt': [
+						'` 1 2 3 4 5 6 7 8 9 0 - = {bksp}',
+						"{tab} q w e r t y u i o p [ ] \\",
+						"a s d f g h j k l ; ' {enter}",
+						"{shift} z x c v b n m , . / {shift}",
+						"{accept} {alt} {space} {alt} {cancel}"
+					],
+					'alt-shift': [
+						"~ ! @ # $ % ^ & * ( ) _ + {bksp}",
+						"{tab} Q W E R T Y U I O P { } |",
+						'A S D F G H J K L : " {enter}',
+						"{shift} Z X C V B N M < > ? {shift}",
+						"{accept} {alt} {space} {alt} {cancel}"
+					]
+				},
+				display: {
+					'a': '\u2714:Accepter (Shift-Enter)', // check mark - same action as accept
+					'accept': 'Accepter:Accepter (Shift-Enter)',
+					'alt': 'AltGr:Alt',
+					'b': '\u2190:Backspace', // Left arrow (same as ←)
+					'bksp': 'Bksp:Backspace',
+					'c': '\u2716:Annuler (Esc)', // big X, close - same action as cancel
+					'cancel': 'Annuler:Annuler (Esc)',
+					'clear': 'C:Clear', // clear num pad
+					'combo': '\u00f6:Toggle Combo Keys',
+					'dec': '.:Decimal', // decimal point for num pad (optional), change '.' to ',' for European format
+					'e': '\u21b5:Enter', // down, then left arrow - enter symbol
+					'enter': 'Entrer:Entrer',
+					'lock': '\u21ea Lock:Caps Lock', // caps lock
+					's': '\u21e7:Shift', // thick hollow up arrow
+					'shift': 'Shift:Shift',
+					'sign': '\u00b1:Change Sign', // +/- sign for num pad
+					'space': ' :Espace',
+					't': '\u21e5:Tab', // right arrow to bar (used since this virtual keyboard works with one directional tabs)
+					'tab': '\u21e5 Tab:Tab' // \u21b9 is the true tab symbol (left & right arrows)
+				},
+			});
+		</script>
+	</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+new Prado.WebUI.TLinkButton({'ID':'ctl0_toAr','EventTarget':'ctl0$toAr','CausesValidation':true,'StopEvent':true,'FormID':'ctl0_formGlobal'});
+new Prado.WebUI.TLinkButton({'ID':'ctl0_toFr','EventTarget':'ctl0$toFr','CausesValidation':true,'StopEvent':true,'FormID':'ctl0_formGlobal'});
+Prado.CallbackRequest.addPostLoaders(['ctl0$CONTENU_PAGE$reclamation$objet','ctl0$CONTENU_PAGE$reclamation$message','ctl0$CONTENU_PAGE$reclamation$numCommandeHidden','ctl0$CONTENU_PAGE$tableauDemandeComplement$id_cmd_hidden']);
+new Prado.ValidationManager({'FormID':'ctl0_formGlobal'});
+new Prado.WebUI.TCompareValidator({'ID':'ctl0_CONTENU_PAGE_reclamation_ctl6','FormID':'ctl0_formGlobal','Display':'Dynamic','ValidationGroup':'validateInfosSupport','ControlToValidate':'ctl0_CONTENU_PAGE_reclamation_objet','ControlType':'TDropDownList','Enabled':true,'ValueToCompare':'0','Operator':'NotEqual','DataType':'String'});
+new Prado.WebUI.TActiveLinkButton({'onLoading':function(sender, parameter){ showLoader(); },'onFailure':function(sender, parameter){ showLoader(); },'onSuccess':function(sender, parameter){ showLoader();callFocus(); },'ID':'ctl0_CONTENU_PAGE_reclamation_etapePrecedente','EventTarget':'ctl0$CONTENU_PAGE$reclamation$etapePrecedente','StopEvent':true});
+new Prado.WebUI.TActiveLinkButton({'onLoading':function(sender, parameter){ showLoader(); },'onFailure':function(sender, parameter){ showLoader(); },'onSuccess':function(sender, parameter){ showLoader();callFocus(); },'ValidationGroup':'validateInfosSupport','ID':'ctl0_CONTENU_PAGE_reclamation_envoyer','EventTarget':'ctl0$CONTENU_PAGE$reclamation$envoyer','StopEvent':true});
+new Prado.WebUI.TActiveLinkButton({'ValidationGroup':'validateDemadeCmp','ID':'ctl0_CONTENU_PAGE_tableauDemandeComplement_btnEnvoyer','EventTarget':'ctl0$CONTENU_PAGE$tableauDemandeComplement$btnEnvoyer','StopEvent':true});
+new Prado.WebUI.TActiveLinkButton({'ID':'ctl0_CONTENU_PAGE_print','EventTarget':'ctl0$CONTENU_PAGE$print','StopEvent':true});
+new Prado.WebUI.TActiveLinkButton({'onLoading':function(sender, parameter){ showLoader(); },'onFailure':function(sender, parameter){ showLoader(); },'onSuccess':function(sender, parameter){ showLoader();callFocus(); },'ID':'ctl0_CONTENU_PAGE_etapePrecedente','EventTarget':'ctl0$CONTENU_PAGE$etapePrecedente','StopEvent':true});
+new Prado.WebUI.TLinkButton({'ID':'ctl0_ctl11','EventTarget':'ctl0$ctl11','CausesValidation':true,'StopEvent':true,'FormID':'ctl0_formGlobal'});
+new Prado.WebUI.TLinkButton({'ID':'ctl0_ctl13','EventTarget':'ctl0$ctl13','CausesValidation':true,'StopEvent':true,'FormID':'ctl0_formGlobal'});
+/*]]>*/
+</script>
+</form>
+</body>
+</html>
+
+

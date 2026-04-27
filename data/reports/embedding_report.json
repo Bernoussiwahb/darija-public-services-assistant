@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-04-27T09:15:53.584964+00:00",
+  "model_name": "intfloat/multilingual-e5-large",
+  "preferred_model_name": "intfloat/multilingual-e5-large",
+  "fallback_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunks_indexed": 80,
+  "embedding_dimension": 1024,
+  "batch_size": 16,
+  "faiss_metric": "inner_product_on_normalized_embeddings",
+  "combined_output_file": "embeddings\\records.jsonl",
+  "faiss_index_file": "embeddings\\index.faiss"
+}

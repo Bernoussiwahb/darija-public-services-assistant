@@ -1,0 +1,193 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <base href="https://id.acces-maroc.ma/">
+
+    <meta charset="utf-8">
+
+    <title>Accès Maroc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- stylesheets -->
+    <link href="resources/css/bootstrap.css" rel="stylesheet">
+    <link href="resources/css/bootstrap.rtl.css" rel="stylesheet">
+    <link href="resources/css/bootstrap-sheet.css" rel="stylesheet">
+    <link href="resources/css/mitreid-connect.css" rel="stylesheet">
+    <link href="resources/css/mitreid-connect-local.css" rel="stylesheet">
+    <link href="resources/css/mitreid-connect-responsive.css" rel="stylesheet">
+    <link href="resources/css/mitreid-connect-responsive-local.css" rel="stylesheet">
+    <link href="resources/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="resources/js/lib/html5.js"></script>
+    <![endif]-->
+
+    <!-- favico -->
+    <link rel="shortcut icon" href="resources/images/mitreid-connect.ico">
+
+    <!-- Load jQuery up here so that we can use in-page functions -->
+    <script type="text/javascript" src="resources/js/lib/jquery.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="resources/js/lib/moment-with-locales.js"></script>
+    <script type="text/javascript" src="resources/js/lib/i18next.js"></script>
+    <script type="text/javascript">
+        $.i18n.init({
+            fallbackLng: "en",
+            lng: "fr",
+            resGetPath: "resources/js/locale/__lng__/__ns__.json",
+            ns: {
+            	namespaces: ["messages"],
+            	defaultNs: 'messages'
+            },
+            fallbackNS: ["messages"]
+        });
+        moment.locale("fr");
+    	// safely set the title of the application
+    	function setPageTitle(title) {
+    		
+            document.title = Accès Maroc;
+    	}
+    	
+		// get the info of the current user, if available (null otherwise)
+    	function getUserInfo() {
+    		return ;
+    	}
+		
+		// get the authorities of the current user, if available (null otherwise)
+		function getUserAuthorities() {
+			return ["ROLE_ANONYMOUS"];
+		}
+		
+		// is the current user an admin?
+		// NOTE: this is just for  
+		function isAdmin() {
+			var auth = getUserAuthorities();
+			if (auth && _.contains(auth, "ROLE_ADMIN")) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		
+		var heartMode = false;
+		
+    </script>    
+</head>
+
+<body>
+
+<div id="wrap">
+
+<!-- Start body -->
+<script type="text/javascript">
+<!--
+
+$(document).ready(function() {
+	// select the appropriate field based on context
+	$('#j_username').focus();
+});
+
+//-->
+</script>
+
+<header>
+	<div class="container-fluid">
+		<div class="navbar fixed-top navbar-light bg-light">
+			<div class="col-lg-6">
+				<!-- <img src="resources/images/armoiries-du-maroc.png" class="LogoStyle">
+				<p style="margin:0;">ROYAUME DU MAROC</p>
+				<img src="resources/images/Layer90.png" />
+				<p>Ministère des Affaires Etrangères et de la Coopération Internationale</p> -->
+				<a href="https://www.acces-maroc.ma/#/">
+					<img src="resources/images/logo_maec.png" class="img-responsive">
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			</div>
+	</div>
+	<div class="container">
+		<div class="row row-eq-height">
+			
+			<div class="col-md-6 conseils-securite">
+				<h2 class="robotoBold">Nos Conseils de sécurité</h2>
+				
+				<ul>
+					<li>
+						Vérifiez toujours que vous êtes sur le bon site :<br/><a  class="robotoBold link-white" href="https://www.acces-maroc.ma/#/">https://www.acces-maroc.ma</a>
+					</li>
+					<li>
+						Vérifier que le lien commence bien par <b>https</b> et non que pas http</li>
+					<li>
+						Votre mot de passe est la clé d'accés à votre compte et doit rester personnel, ne le communiquez à personne !</li>
+				</ul>
+			</div>
+	
+			<div class="col-md-6 form-content">
+				<!-- <h2>Avant de créer un compte vérifier si <a href="https://www.acces-maroc.ma/#/admissibilite_autorisation">vous avez besoin d’une AEVM ?</a></h2> -->
+				<form action="https://id.acces-maroc.ma/login" method="POST">
+					<h1>Authentifiez-Vous :</h1>
+					<div class="form-group">
+						<!-- <label>Mail</label> -->
+						<div class="input-group">
+							<div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+							<input class="form-control"
+								type="text" placeholder="Mail"
+								autocorrect="off" autocapitalize="off" autocomplete="off"
+								spellcheck="false" value=""
+								id="j_username" name="username">
+						</div>
+					</div>
+	
+					<div class="form-group">
+						<!-- <label>Mot de passe</label> -->
+						<div class="input-group">
+							<div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+							<input class="form-control"
+								type="password"
+								placeholder="Mot de passe"
+								autocorrect="off" autocapitalize="off" autocomplete="off"
+								spellcheck="false" id="j_password" name="password"> 
+					
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="text-center">
+							<input type="hidden" name="_csrf"
+								value="c2e37b36-bc1e-4e5e-921e-d0a56db703ad" /> 
+							<input type="submit" class="btn btn-primary"
+								value="Se connecter" name="submit">
+							<a href="https://www.acces-maroc.ma/#/inscription" class="btn btn-secondary">
+								S'inscrire...</a>
+						</div>
+					</div>
+	
+					<p class="souscription">
+						<a href="https://www.acces-maroc.ma/#/resetPasswordmail">Mot de passe oublié</a>
+					</p>	
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container-fluid copyright text-center">
+		<p>Copyright © MAECAMRE Maroc. Tous droits réservés</p>
+	</div>
+</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"05814a6ba0594550a424aca56665132d","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>

@@ -1,0 +1,29 @@
+{
+  "id": "www.cnie.ma_",
+  "url": "https://www.cnie.ma/",
+  "final_url": "https://www.cnie.ma/",
+  "domain": "www.cnie.ma",
+  "title": "Portail CNIE.MA",
+  "category": "cnie",
+  "page_type": "portail",
+  "language": "fr",
+  "priority": "haute",
+  "responsible_entity": "CNIE",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [],
+  "keywords": [
+    "cnie"
+  ],
+  "content": "",
+  "content_length": 0,
+  "list_items_count": 0,
+  "http_status": 200,
+  "status": "skipped",
+  "skip_reason": "content_too_short",
+  "fetched_at": "2026-04-27T09:01:00.405508+00:00"
+}

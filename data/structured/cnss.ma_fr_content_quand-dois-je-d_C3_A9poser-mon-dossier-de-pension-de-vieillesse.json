@@ -1,0 +1,29 @@
+{
+  "id": "cnss.ma_fr_content_quand-dois-je-d_C3_A9poser-mon-dossier-de-pension-de-vieillesse",
+  "url": "https://cnss.ma/fr/content/quand-dois-je-d%C3%A9poser-mon-dossier-de-pension-de-vieillesse",
+  "final_url": "https://cnss.ma/fr/content/quand-dois-je-d%C3%A9poser-mon-dossier-de-pension-de-vieillesse",
+  "domain": "cnss.ma",
+  "title": "Quand dois-je déposer mon dossier de pension de vieillesse? | La Caisse Nationale de Sécurité Sociale",
+  "category": "cnss",
+  "page_type": "faq",
+  "language": "fr",
+  "priority": "haute",
+  "responsible_entity": "CNSS",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [],
+  "keywords": [
+    "pension"
+  ],
+  "content": "",
+  "content_length": 0,
+  "list_items_count": 0,
+  "http_status": 200,
+  "status": "skipped",
+  "skip_reason": "content_too_short",
+  "fetched_at": "2026-04-27T09:00:58.259315+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-04-27T09:01:04.626636+00:00",
+  "dataset_entries": 29,
+  "category_counts": {
+    "anam": 13,
+    "service_public": 11,
+    "cnie": 3,
+    "cnss": 2
+  },
+  "domain_counts": {
+    "anam.ma": 12,
+    "inpe.anam.ma": 1,
+    "maroc.ma": 3,
+    "www.acces-maroc.ma": 1,
+    "www.cnss.ma": 2,
+    "www.consulat.ma": 2,
+    "www.idarati.ma": 1,
+    "www.maroc.ma": 2,
+    "www.mmsp.gov.ma": 1,
+    "www.passeport.ma": 4
+  },
+  "skipped_files": [
+    {
+      "file": "anam.ma_anam.json",
+      "status": "duplicate_content",
+      "reason": "a68e7174d1cc0cf1e5c6eb0125ed5e506103a485"
+    },
+    {
+      "file": "casierjudiciaire.justice.gov.ma_Accueil.aspx_culture_fr-FR.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "cnss.ma_fr_content_quand-dois-je-d_C3_A9poser-mon-dossier-de-pension-de-vieillesse.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "id.acces-maroc.ma_login.json",
+      "status": "skipped",
+      "reason": "authentication_page"
+    },
+    {
+      "file": "taawidaty.cnss.ma_.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.cnie.ma_.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.cnss.ma_fr_content_pension-de-vieillesse.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.damancom.ma_.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.epolice.ma_.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.macnss.ma_.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.macnss.ma_taawidaty.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.watiqa.ma_index.php5_page_citoyen.SuiviCommande.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    },
+    {
+      "file": "www.watiqa.ma_index.php_page_citoyen.FormulaireCommande.json",
+      "status": "skipped",
+      "reason": "content_too_short"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "anam.ma_anam_regulation_referentiel-des-dispositifs-medicaux_",
+  "url": "https://anam.ma/anam/regulation/referentiel-des-dispositifs-medicaux/",
+  "final_url": "https://anam.ma/anam/regulation/referentiel-des-dispositifs-medicaux/",
+  "domain": "anam.ma",
+  "title": "Référentiel des dispositifs médicaux – anam",
+  "category": "anam",
+  "page_type": "referentiel",
+  "language": "fr",
+  "priority": "haute",
+  "responsible_entity": "ANAM",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": null,
+  "steps": [],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [
+    "# Référentiel des dispositifs médicaux",
+    "#### L'Agence Nationale de l'Assurance Maladie",
+    "## L’ANAM est l’une des réalisations des grandes réformes structurantes qu’a connu notre pays durant cette dernière décennie. Tel que prévu par la législation en vigueur, l’ANAM a pour missions principales l’encadrement et la régulation du système de l’Assurance Maladie Obligatoire (AMO).",
+    "La liste des appareillages et dispositifs médicaux admis au remboursement au titre de l’Assurance Maladie Obligatoire comprend 869 articles. Pour certains articles le remboursement reste tributaire de l’accord préalable (AP) de l’organisme gestionnaire, CNOPS ou CNSS selon le cas, et ce après la demande formulée par l’assuré sur la base de la prescription du médecin. Cette liste comprend 3 classes:",
+    "- Classe I: Dispositifs médicaux pour traitement d’aide à la vie (72 dispositifs)",
+    "- Classe II: Orthèses et prothèses externes (627 dispositifs)",
+    "- Classe III: Prothèses internes (170 dispositifs)",
+    "Chaque dispositif médical est assorti d’un code et d’un forfait base de remboursement ou de prise en charge."
+  ],
+  "keywords": [
+    "anam",
+    "amo",
+    "assurance maladie"
+  ],
+  "content": "# Référentiel des dispositifs médicaux\n#### L'Agence Nationale de l'Assurance Maladie\n## L’ANAM est l’une des réalisations des grandes réformes structurantes qu’a connu notre pays durant cette dernière décennie. Tel que prévu par la législation en vigueur, l’ANAM a pour missions principales l’encadrement et la régulation du système de l’Assurance Maladie Obligatoire (AMO).\nLa liste des appareillages et dispositifs médicaux admis au remboursement au titre de l’Assurance Maladie Obligatoire comprend 869 articles. Pour certains articles le remboursement reste tributaire de l’accord préalable (AP) de l’organisme gestionnaire, CNOPS ou CNSS selon le cas, et ce après la demande formulée par l’assuré sur la base de la prescription du médecin. Cette liste comprend 3 classes:\n- Classe I: Dispositifs médicaux pour traitement d’aide à la vie (72 dispositifs)\n- Classe II: Orthèses et prothèses externes (627 dispositifs)\n- Classe III: Prothèses internes (170 dispositifs)\nChaque dispositif médical est assorti d’un code et d’un forfait base de remboursement ou de prise en charge.",
+  "content_length": 1081,
+  "list_items_count": 3,
+  "http_status": 200,
+  "status": "success",
+  "skip_reason": null,
+  "fetched_at": "2026-04-27T09:00:58.749897+00:00"
+}

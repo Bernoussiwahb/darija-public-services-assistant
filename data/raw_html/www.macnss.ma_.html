@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 
+    <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get("code");
+    const state = urlParams.get("state");
+    const error = urlParams.get("error");
+
+            const error_description = urlParams.get("error_description");
+
+    if (code) {
+       window.location.href = `/fr/authentification?code_dgsn=${encodeURIComponent(code)}&state=${encodeURIComponent(state)}`;
+    }
+     if (error) {
+       window.location.href = `/fr/authentification?error_dgsn=${encodeURIComponent(error)}&error_description_dgsn=${encodeURIComponent(error_description)}`;
+    }
+  </script>
+    <meta charset="UTF-8" />
+    <base href="/" />
+    <link rel="icon" type="image/svg+xml" href="/logo-cnss.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+          img-src 'self' data: https://img.youtube.com https://www.google-analytics.com;
+          style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+          font-src 'self' https://fonts.gstatic.com;
+          script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com;
+          connect-src 'self' https://www.google-analytics.com;
+          frame-ancestors 'none';
+          frame-src https://challenges.cloudflare.com;
+          object-src 'none';
+          base-uri 'none';">
+    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfqrux_10335260306043831.js" data-dtconfig="rid=RID_2418|rpid=993008369|domain=macnss.ma|reportUrl=/rb_71397dcb-9748-4613-94f3-ed9ae50302c3|app=e714d98ea601fa77|cuc=p0qmmcfp|owasp=1|mel=100000|expw=1|featureHash=ICA7NVfqrux|dpvc=1|lastModification=1776858544210|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICA7NVfqrux_10335260306043831.js"></script><link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ 
+    <title>MACNSS</title>
+    <script type="module" crossorigin src="/assets/index-98767086.js"></script>
+    <link rel="stylesheet" href="/assets/index-f507a3a9.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  <script type="text/javascript" src="/hook/proxy?script=global"></script><script type="text/javascript" src="/hook/proxy?script=global"></script></body>
+
+
+</html>

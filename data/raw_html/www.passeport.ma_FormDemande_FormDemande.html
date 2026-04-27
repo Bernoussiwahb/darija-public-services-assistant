@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="NETOPIA-SOLUTIONS">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de passeport au Maroc - Passeport</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="/images/cart-2-1.png" type="image/png" rel="icon">
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/Menu.css" rel="stylesheet" />
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/Menu.js"></script>
+    <script type="text/javascript">
+        var $ = jQuery.noConflict();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131444182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-131444182-1');
+    </script>
+    
+
+
+</head>
+<body>
+    <div id="global-content">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a href="/"><img src="/images/logo.png" width="350" /></a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul class="Langue">
+                            <li><a href="/ar/FormDemande/FormDemande" hreflang="ar" rel="alternate">اللغة العربية</a></li>
+                            <li><a href="#" id="fontPlusBtn">A+</a> <a href="#" id="fontMinusBtn">A-</a></li>
+                        </ul>
+                        <div class="Search">
+<form action="/Home/Recherche" id="searchForm" method="post">                                <input class="txt" placeholder="Recherche sur le site ..." type="text" name="words" id="searchKey">
+                                <input class="ok" value="&#xf002;" type="submit">
+</form>                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="col-lg-12">
+                        <!---------------- STAR NAV ---------------->
+                        <nav id="navigation-box">
+                            <!-- Menu Hamburger pour Mobile -->
+                            <a href="#" id="navigation-toggle"> <span class="menu-icon"> <span class="icon-toggle" role="button" aria-label="Toggle Navigation"> <span class="lines"></span> </span> </span> </a>
+
+                            <!-- Contenu Menu Principal -->
+                            <ul id="navigation" class="naviga">
+                                <li><a href="/Home/Index" class="first leaf"><i class="fa fa-home"></i> Accueil</a></li>
+                                <li class="dropdown">
+                                    <span class="sub-nav-toggle plus"></span><a href="" class="expanded"><i class="fa fa-info-circle"></i> Procédures</a>
+                                    <ul id="dropdown-1" class="dropdown-menu">
+                                        <li><a href="/Procedure/GuideAuMaroc" class="first leaf">Au maroc</a></li>
+                                        <li><a href="/Procedure/GuideAlEtranger" class="last leaf">A l'étranger</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <span class="sub-nav-toggle plus"></span><a href="" class="expanded "><i class="fa fa-file-alt"></i> Conditions de délivrance </a>
+                                    <ul id="dropdown-2" class="dropdown-menu">
+                                        <li><a href="/ConditionsDelivrance/DelAuMaroc" class="first leaf">Au maroc</a></li>
+                                        <li><a href="/ConditionsDelivrance/DelAlEtranger" class="last leaf">A l'étranger</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <span class="sub-nav-toggle plus"></span><a href="" class="last expanded"><i class="fa fa-university"></i> A qui s'adresser</a>
+                                    <ul id="dropdown-3" class="dropdown-menu">
+                                        <li><a href="/AquiSadresser/AuMaroc" class="first leaf">Au maroc</a></li>
+                                        <li><a href="/AquiSadresser/AlEtranger" class="last leaf">A l'étranger</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!---------------- END NAV ---------------->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="Milieu">
+            <div class="container">
+                <div class="row">
+                    
+
+
+<link href="/css/Style.css" rel="stylesheet" />
+<link href="/css/jqbtk.min.css" rel="stylesheet" />
+<link href="/css/tooltipster.bundle.min.css" rel="stylesheet" />
+
+<style>
+    .field-validation-error {
+        color: red;
+        font-size: 12px;
+    }
+
+    #exoValidation {
+        text-align: center;
+    }
+
+        #exoValidation span {
+            font-size: 15px;
+        }
+
+    .modal-backdrop.in {
+        opacity: 0.3;
+    }
+</style>
+
+<!---------------- SiteMap ---------------->
+<div class="col-lg-12">
+    <div class="SiteMap">
+        <p>
+            <a href="/"> Accueil</a>>
+            <a href="/FormDemande/FormDemande"> Au Maroc</a>>
+            <span> Formuler Ma Demande</span>
+        </p>
+    </div>
+</div>
+<div id="PasseportTab">
+    <ul class="nav nav-pills">
+        <li class="Tab  active">
+            <a href="/FormDemande/FormDemande?typePasseport=bio">
+                <span class="TabBiometrique"></span>
+                Biom&#233;trique
+            </a>
+        </li>
+        <li class="Tab ">
+            <a href="/FormDemande/FormDemande?typePasseport=prov">
+                <span class="TabProvisoire"></span>
+                Provisoire
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content clearfix">
+        <!---------------- Cartouches ---------------->
+<!---------------- Cartouches ---------------->
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="Cartouche">
+        <a href="/Home/EtimbreEnligne">
+            <div class="ImgCart1 p0 col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="col-md-8 col-sm-8 col-xs-8"><span>Acheter votre e-Timbre en ligne</span></div>
+        </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="Cartouche active">
+        <a href="/FormDemande/FormDemande?typePasseport=bio">
+            <div class="ImgCart2 p0 col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="col-md-8 col-sm-8 col-xs-8"><span>Remplir votre demande de passeport</span></div>
+        </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="Cartouche">
+        <a href="/Home/PiecesAuMaroc?typePasseport=bio">
+            <div class="ImgCart3 p0 col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="col-md-8 col-sm-8 col-xs-8"><span>Pièces à fournir</span></div>
+        </a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="Cartouche">
+        <a href="/SuiviDemande/SuiviDemande">
+            <div class="ImgCart4 p0 col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="col-md-8 col-sm-8 colw-xs-8"><span>Suivre votre demande</span></div>
+        </a>
+    </div>
+</div>
+
+<div class="col-xs-12 Title">
+    <h1>Nouvelle demande de passeport biométrique</h1>
+</div>
+
+        <!------ Title ------>
+
+<form action="/FormDemande/FormDemande" autocomplete="off" class="col-xs-12" id="FormDemande" method="post"><input id="bio" name="TypePasseport" type="hidden" value="bio" /><input id="cultureNameHdn" name="cultureNameHdn" type="hidden" value="fr-FR" />            <!------ Radio button ------>
+            <div class="col-lg-12 MajMin">
+                <ul>
+                    <li>
+                        <input checked="checked" class="RadioRaison" data-val="true" data-val-number="Le champ Raison doit être un nombre." data-val-required="The Raison field is required." id="Majeur" name="Raison" type="radio" value="1" />
+                        <label for="Majeur">Majeur</label>
+                    </li>
+                    <li>
+                        <input class="RadioRaison" id="Majeur-t" name="Raison" type="radio" value="2" />
+                        <label for="Majeur-t">Majeur plac&#233; sous tutelle</label>
+                    </li>
+                    <li>
+                        <input class="RadioRaison" id="Mineur" name="Raison" type="radio" value="3" />
+                        <label for="Mineur">Mineur de 12 &#224;  18 ans </label>
+                    </li>
+                    <li>
+                        <input class="RadioRaison" id="Mineur-12" name="Raison" type="radio" value="4" />
+                        <label for="Mineur-12">Mineur moins de 12 ans </label>
+                    </li>
+                    <li>
+                        <span class="field-validation-valid" data-valmsg-for="Raison" data-valmsg-replace="true"></span>
+                    </li>
+                </ul>
+            </div>
+            <!------ Formulaire ------>
+            <div class="col-lg-12">
+                <div class="Formulaire">
+                    <div id="Demandeur">
+                        <h1> Renseignements concernant le demandeur :</h1>
+                        <div class="row" id="exoValidation">
+                            <span class="field-validation-valid" data-valmsg-for="ExoTimbre" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-5 col-form-label pr">Code Timbre<em class="red">*</em></label>
+                                <div class="col-sm-7">
+                                    <input autocomplete="off" class="form-control" data-regx="[^&#39;]{22,}?" data-toggle="tooltip" data-val="true" data-val-regex="Seuls les alphabets et numéros autorisés" data-val-regex-pattern="^[a-zA-Z0-9]*$" id="Code_ETimbre" maxlength="16" name="_Code_ETimbre" onBlur="ValidateInput(this, 1)" onkeypress="return GetMyKeyCode(this,6);" title="Indiquez votre Code E-Timbre" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Code_ETimbre" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6" id="RadioNoCodeTimbre">
+                                <input class="RadioNoCodeTimbre" data-val="true" data-val-number="Le champ NoCodeTimbre doit être un nombre." data-val-required="The NoCodeTimbre field is required." id="Exonere" name="NoCodeTimbre" type="radio" value="1" />
+                                <label class="col-form-radio" for="Exonere">Je suis exon&#233;r&#233; des frais de timbre</label>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label class="col-sm-5 col-form-label pr">N° CNIE<em class="red" id="cnieAsterix" style=>*</em></label>
+                                <div class="col-sm-7">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le numéro de la CNIE est invalide" data-val-regex-pattern="^[a-zA-Z][a-zA-Z][1-9][0-9]*$|^[a-zA-Z][1-9][0-9]*$" id="num_Cnie" maxlength="10" name="_Num_CNIE" onBlur="ValidateInput(this, 2)" oncopy="return false" onkeypress="return GetMyKeyCode(this,4,1);" onpaste="return false" title="Indiquez votre N° de Carte Nationale d&#39;Identité Electronique" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Num_CNIE" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nom<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Seuls les alphabets autorisés" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" data-val-required="Le nom est obligatoire" maxlength="45" name="_Nom_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez votre nom en caractères latins" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Nom_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Prénom<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Seuls les alphabets autorisés" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" data-val-required="Le prénom est obligatoire" maxlength="45" name="_Prenom_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez votre prénom en caractères latins" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Prenom_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row rowar">
+                            <div class="form-group col-md-6 col-xs-12">
+                                <label class="col-sm-3 col-form-label">الإسم الشخصي <em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="keyboard form-control" data-toggle="tooltip" data-val="true" data-val-regex="الإسم العائلي باللغة العربية" data-val-regex-pattern="^[؀-ۿ ]+$" data-val-required="الإسم الشخصي باللغة العربية ضروري" id="prenomAr" maxlength="45" name="_Prenom_AR" onBlur="this.value = ValidateInput(this, 5)" oncopy="return false" onkeypress="return GetMyKeyCode(this,1);" onpaste="return false" title="أكتب اسمك الشخصي بالأحرف الأبجدية" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Prenom_AR" data-valmsg-replace="true"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-xs-12">
+                                <label class="col-sm-3 col-form-label">الإسم العائلي <em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="keyboard form-control" data-toggle="tooltip" data-val="true" data-val-regex="الإسم العائلي باللغة العربية ضروري" data-val-regex-pattern="^[؀-ۿ ]+$" data-val-required="الإسم العائلي باللغة العربية ضروري" id="NomAr" maxlength="45" name="_Nom_AR" onBlur="this.value = ValidateInput(this, 4)" oncopy="return false" onkeypress="return GetMyKeyCode(this,1);" onpaste="return false" title="أكتب اسمك العائلي بالأحرف الأبجدية" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Nom_AR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-1">
+                                
+                            </div>
+                            <div class="form-group col-md-5 rtlformcb">
+                                
+                                <input data-val="true" data-val-required="The NoMoisJour field is required." id="Jour-mois" name="NoMoisJour" type="checkbox" value="true" /><input name="NoMoisJour" type="hidden" value="false" />
+                                <label class="col-form-radio" for="Jour-mois">Je ne dispose pas du jour et du mois de naissance</label>
+                            </div>
+                            <div class="form-group col-md-4 rtlformcb">
+                                
+                                <input data-val="true" data-val-required="The NoJour field is required." id="Jour" name="NoJour" type="checkbox" value="true" /><input name="NoJour" type="hidden" value="false" />
+                                <label class="col-form-radio" for="Jour">Je ne dispose pas du jour de naissance</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Date de naissance<em class="red">*</em></label>
+                                <div class="form-group col-sm-3">
+                                    <input class="form-control indate" data-toggle="tooltip" data-val="true" data-val-length="Le jour de naissance est incorrecte" data-val-length-max="2" data-val-regex="Le jour de naissance est incorrecte" data-val-regex-pattern="[0-9]{2}$" id="txtJour" maxlength="2" name="_DateNaissanceJour" onBlur="this.value = ValidateInput(this, 3); " oncopy="return false" onkeypress="return validateJour();" onpaste="return false" placeholder="Jour (JJ)" title="Indiquez votre jour de naissance" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_DateNaissanceJour" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <input class="form-control indate" data-toggle="tooltip" data-val="true" data-val-length="Le mois de naissance est incorrecte" data-val-length-max="2" data-val-regex="Le mois de naissance est incorrecte" data-val-regex-pattern="[0-9]{2}$" id="txtMois" maxlength="2" name="_DateNaissanceMois" onBlur=" this.value = ValidateInput(this, 3); " oncopy="return false" onkeypress="return validateMois();" onpaste="return false" placeholder="Mois (MM)" title="Indiquez votre mois de naissance" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_DateNaissanceMois" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <input class="form-control indate" data-toggle="tooltip" data-val="true" data-val-length="L&#39;année de naissance est incorrecte" data-val-length-max="4" data-val-regex="L&#39;année de naissance est incorrecte" data-val-regex-pattern="[0-9]{4}$" data-val-required="L&#39;année de naissance est obligatoire" id="txtAnnee" maxlength="4" name="_DateNaissanceAnnee" onBlur="this.value = ValidateInput(this, 3);" oncopy="return false" onkeypress="return GetMyKeyCode(this,6);" onpaste="return false" placeholder="Année (AAAA)" title="Indiquez votre année de naissance" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_DateNaissanceAnnee" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="form-group col-md-3 col-sm-6 col-xs-6 pl">
+                                    <label class="col-sm-3 col-form-label pr">Sexe<em class="red">*</em></label>
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-6 pl dwsx">
+                                    <input data-val="true" data-val-number="Le champ _Code_Sexe doit être un nombre." data-val-required="Le sexe est obligatoire" id="Masculain" name="_Code_Sexe" type="radio" value="2" />
+                                    <label class="col-form-radio" for="Masculain">Masculin</label>
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-6 pl dwsx">
+                                    <input id="Féminin" name="_Code_Sexe" type="radio" value="1" />
+                                    <label class="col-form-radio" for="Féminin">Féminin</label>
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-6 pl dwsx">
+                                    <span class="field-validation-valid" data-valmsg-for="_Code_Sexe" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Lieu de naissance<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Seuls les alphabets autorisés" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" data-val-required="Le lieu de naissance est obligatoire" maxlength="30" name="_LieuNaissance_FR" onBlur="ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez votre lieu de naissance" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_LieuNaissance_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Pays de naissance<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-required="Le pays de naissance est obligatoire" name="_PaysNaissance_FR" title="Indiquez votre pays de naissance"><option value="AFGHANISTAN">AFGHANISTAN</option>
+<option value="AFRIQUE DU SUD">AFRIQUE DU SUD</option>
+<option value="ALBANIE">ALBANIE</option>
+<option value="ALGERIE">ALGERIE</option>
+<option value="ALLEMAGNE">ALLEMAGNE</option>
+<option value="ANDORRE">ANDORRE</option>
+<option value="ANGOLA">ANGOLA</option>
+<option value="ANTIGUA-ET-BARBUDA">ANTIGUA-ET-BARBUDA</option>
+<option value="ARABIE SAOUDITE">ARABIE SAOUDITE</option>
+<option value="ARGENTINE">ARGENTINE</option>
+<option value="ARMENIE">ARMENIE</option>
+<option value="AUSTRALIE">AUSTRALIE</option>
+<option value="AUTRICHE">AUTRICHE</option>
+<option value="AZERBAIDJAN">AZERBAIDJAN</option>
+<option value="BAHAMAS">BAHAMAS</option>
+<option value="BAHREIN">BAHREIN</option>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="BARBADE">BARBADE</option>
+<option value="BELGIQUE">BELGIQUE</option>
+<option value="BELIZE">BELIZE</option>
+<option value="BENIN">BENIN</option>
+<option value="BHOUTAN">BHOUTAN</option>
+<option value="BIELORUSSIE">BIELORUSSIE</option>
+<option value="BOLIVIE">BOLIVIE</option>
+<option value="BOSNIE-HERZEGOVINE">BOSNIE-HERZEGOVINE</option>
+<option value="BOTSWANA">BOTSWANA</option>
+<option value="BRESIL">BRESIL</option>
+<option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option>
+<option value="BULGARIE">BULGARIE</option>
+<option value="BURKINA FASO">BURKINA FASO</option>
+<option value="BURUNDI">BURUNDI</option>
+<option value="CAMBODGE">CAMBODGE</option>
+<option value="CAMEROUN">CAMEROUN</option>
+<option value="CANADA">CANADA</option>
+<option value="CAP-VERT">CAP-VERT</option>
+<option value="CHILI">CHILI</option>
+<option value="CHINE">CHINE</option>
+<option value="CHYPRE">CHYPRE</option>
+<option value="COLOMBIE">COLOMBIE</option>
+<option value="COMORES">COMORES</option>
+<option value="CONGO">CONGO</option>
+<option value="COREE DU NORD">COREE DU NORD</option>
+<option value="COREE DU SUD">COREE DU SUD</option>
+<option value="COSTA RICA">COSTA RICA</option>
+<option value="COTE D’IVOIRE">COTE D’IVOIRE</option>
+<option value="CROATIE">CROATIE</option>
+<option value="CUBA">CUBA</option>
+<option value="DANEMARK">DANEMARK</option>
+<option value="DJIBOUTI">DJIBOUTI</option>
+<option value="DOMINIQUE">DOMINIQUE</option>
+<option value="EGYPTE">EGYPTE</option>
+<option value="EMIRATS ARABES UNIS">EMIRATS ARABES UNIS</option>
+<option value="EQUATEUR">EQUATEUR</option>
+<option value="ERYTHREE">ERYTHREE</option>
+<option value="ESPAGNE">ESPAGNE</option>
+<option value="ESTONIE">ESTONIE</option>
+<option value="ETATS-UNIS D&#39;AMERIQUE">ETATS-UNIS D&#39;AMERIQUE</option>
+<option value="ETHIOPIE">ETHIOPIE</option>
+<option value="FIDJI">FIDJI</option>
+<option value="FINLANDE">FINLANDE</option>
+<option value="FRANCE">FRANCE</option>
+<option value="GABON">GABON</option>
+<option value="GAMBIE">GAMBIE</option>
+<option value="GEORGIE">GEORGIE</option>
+<option value="GHANA">GHANA</option>
+<option value="GIBRALTAR">GIBRALTAR</option>
+<option value="GRECE">GRECE</option>
+<option value="GRENADE">GRENADE</option>
+<option value="GUATEMALA">GUATEMALA</option>
+<option value="GUINEE">GUINEE</option>
+<option value="GUINEE EQUATORIALE">GUINEE EQUATORIALE</option>
+<option value="GUINEE-BISSAU">GUINEE-BISSAU</option>
+<option value="GUYANA">GUYANA</option>
+<option value="HAITI">HAITI</option>
+<option value="HONDURAS">HONDURAS</option>
+<option value="HONGRIE">HONGRIE</option>
+<option value="ILES MARSHALL">ILES MARSHALL</option>
+<option value="ILES SALOMON">ILES SALOMON</option>
+<option value="INDE">INDE</option>
+<option value="INDONESIE">INDONESIE</option>
+<option value="IRAK">IRAK</option>
+<option value="IRAN">IRAN</option>
+<option value="IRLANDE">IRLANDE</option>
+<option value="ISLANDE">ISLANDE</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALIE">ITALIE</option>
+<option value="JAMAIQUE">JAMAIQUE</option>
+<option value="JAPON">JAPON</option>
+<option value="JORDANIE">JORDANIE</option>
+<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+<option value="KENYA">KENYA</option>
+<option value="KIRGHIZISTAN">KIRGHIZISTAN</option>
+<option value="KIRIBATI">KIRIBATI</option>
+<option value="KOWEIT">KOWEIT</option>
+<option value="LAOS">LAOS</option>
+<option value="LESOTHO">LESOTHO</option>
+<option value="LETTONIE">LETTONIE</option>
+<option value="LIBAN">LIBAN</option>
+<option value="LIBERIA">LIBERIA</option>
+<option value="LIBYE">LIBYE</option>
+<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+<option value="LITUANIE">LITUANIE</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MACEDOINE">MACEDOINE</option>
+<option value="MADAGASCAR">MADAGASCAR</option>
+<option value="MALAISIE">MALAISIE</option>
+<option value="MALAWI">MALAWI</option>
+<option value="MALDIVES">MALDIVES</option>
+<option value="MALI">MALI</option>
+<option value="MALTE">MALTE</option>
+<option selected="selected" value="MAROC">MAROC</option>
+<option value="MAURICE">MAURICE</option>
+<option value="MAURITANIE">MAURITANIE</option>
+<option value="MEXIQUE">MEXIQUE</option>
+<option value="MICRONESIE">MICRONESIE</option>
+<option value="MOLDAVIE">MOLDAVIE</option>
+<option value="MONACO">MONACO</option>
+<option value="MONGOLIE">MONGOLIE</option>
+<option value="MONTENEGRO">MONTENEGRO</option>
+<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+<option value="MYANMAR">MYANMAR</option>
+<option value="NAMIBIE">NAMIBIE</option>
+<option value="NAURU">NAURU</option>
+<option value="NEPAL">NEPAL</option>
+<option value="NICARAGUA">NICARAGUA</option>
+<option value="NIGER">NIGER</option>
+<option value="NIGERIA">NIGERIA</option>
+<option value="NORVEGE">NORVEGE</option>
+<option value="NOUVELLE-ZELANDE">NOUVELLE-ZELANDE</option>
+<option value="OMAN">OMAN</option>
+<option value="OUGANDA">OUGANDA</option>
+<option value="OUZBEKISTAN">OUZBEKISTAN</option>
+<option value="PAKISTAN">PAKISTAN</option>
+<option value="PALAOS">PALAOS</option>
+<option value="PALESTINE">PALESTINE</option>
+<option value="PANAMA">PANAMA</option>
+<option value="PAPOUASIE-NOUVELLE-GUINEE">PAPOUASIE-NOUVELLE-GUINEE</option>
+<option value="PARAGUAY">PARAGUAY</option>
+<option value="PAYS-BAS">PAYS-BAS</option>
+<option value="PEROU">PEROU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="POLOGNE">POLOGNE</option>
+<option value="PORTUGAL">PORTUGAL</option>
+<option value="QATAR">QATAR</option>
+<option value="REPUBLIQUE CENTRAFRICAINE">REPUBLIQUE CENTRAFRICAINE</option>
+<option value="REPUBLIQUE DEMOCRATIQUE DU CONGO">REPUBLIQUE DEMOCRATIQUE DU CONGO</option>
+<option value="REPUBLIQUE DOMINICAINE">REPUBLIQUE DOMINICAINE</option>
+<option value="REPUBLIQUE TCHEQUE">REPUBLIQUE TCHEQUE</option>
+<option value="ROUMANIE">ROUMANIE</option>
+<option value="ROYAUME-UNI">ROYAUME-UNI</option>
+<option value="RUSSIE">RUSSIE</option>
+<option value="RWANDA">RWANDA</option>
+<option value="SAINTE-LUCIE">SAINTE-LUCIE</option>
+<option value="SAINT-KITTS-ET-NEVIS">SAINT-KITTS-ET-NEVIS</option>
+<option value="SAINT-MARIN">SAINT-MARIN</option>
+<option value="SAINT-VINCENT-ET-LES GRENADINES">SAINT-VINCENT-ET-LES GRENADINES</option>
+<option value="SALVADOR">SALVADOR</option>
+<option value="SAMOA">SAMOA</option>
+<option value="SAO TOME-ET-PRINCIPE">SAO TOME-ET-PRINCIPE</option>
+<option value="SENEGAL">SENEGAL</option>
+<option value="SERBIE">SERBIE</option>
+<option value="SEYCHELLES">SEYCHELLES</option>
+<option value="SIERRA LEONE">SIERRA LEONE</option>
+<option value="SINGAPOUR">SINGAPOUR</option>
+<option value="SLOVAQUIE">SLOVAQUIE</option>
+<option value="SLOVENIE">SLOVENIE</option>
+<option value="SOMALIE">SOMALIE</option>
+<option value="SOUDAN">SOUDAN</option>
+<option value="SRI LANKA">SRI LANKA</option>
+<option value="SUEDE">SUEDE</option>
+<option value="SUISSE">SUISSE</option>
+<option value="SURINAME">SURINAME</option>
+<option value="SWAZILAND">SWAZILAND</option>
+<option value="SYRIE">SYRIE</option>
+<option value="TADJIKISTAN">TADJIKISTAN</option>
+<option value="TANZANIE">TANZANIE</option>
+<option value="TCHAD">TCHAD</option>
+<option value="THAILANDE">THAILANDE</option>
+<option value="TIMOR LESTE">TIMOR LESTE</option>
+<option value="TOGO">TOGO</option>
+<option value="TONGA">TONGA</option>
+<option value="TRINITE-ET-TOBAGO">TRINITE-ET-TOBAGO</option>
+<option value="TUNISIE">TUNISIE</option>
+<option value="TURKMENISTAN">TURKMENISTAN</option>
+<option value="TURQUIE">TURQUIE</option>
+<option value="TUVALU">TUVALU</option>
+<option value="UKRAINE">UKRAINE</option>
+<option value="URUGUAY">URUGUAY</option>
+<option value="VANUATU">VANUATU</option>
+<option value="VENEZUELA">VENEZUELA</option>
+<option value="VIET NAM">VIET NAM</option>
+<option value="YEMEN">YEMEN</option>
+<option value="ZAMBIE">ZAMBIE</option>
+<option value="ZIMBABWE">ZIMBABWE</option>
+</select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                        <label class="col-sm-3 col-form-label col-form-label-2lien pr" id="telRepLbl">N° de téléphone</label>
+
+                                <div class="col-sm-3">
+                                    <input value="+212" class="form-control" dir="ltr" maxlength="13" name="_Num_Tel" type="text" disabled="disabled">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input Value="" class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le numéro de téléphone est invalide, exemple: 7XXXXXXXX, 6XXXXXXXX ou 5XXXXXXXX" data-val-regex-pattern="^[5-6-7]{1}[0-9]{8}$" dir="ltr" maxlength="9" name="_Num_Tel" onBlur="checkTel(this);" oncopy="return false" onkeydown="return ValidateTel(this);" onkeypress="return GetMyKeyCode(this,6,1);" onpaste="return false" title="Indiquez votre numéro de téléphone" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Num_Tel" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                        <label class="col-sm-3 col-form-label col-form-label-2lien pr" id="emailRepLbl">Adresse email</label>
+
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="The field _Adresse_Mail must be a string with a maximum length of 80." data-val-length-max="80" maxlength="80" name="_Adresse_Mail" onBlur="checkEmail(this);" oncopy="return false" onpaste="return false" title="Indiquez votre adresse email" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Adresse_Mail" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label class="col-md-2 col-sm-3 col-form-label pr">Adresse postale<em class="red">*</em></label>
+                                <div class="col-md-10 col-sm-9 AdresseP">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="L&#39;adresse postal est incorrecte" data-val-length-max="60" data-val-regex="L&#39;adresse postal est incorrecte" data-val-regex-pattern="(?i)^[a-zA-Z0-9&#39;-/.: ,\s-]+$" data-val-required="L&#39;adresse postal est obligatoire" maxlength="60" name="_Adresse_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,4,1);" onpaste="return false" title="Indiquez votre adresse postale" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Adresse_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Ville<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="The field _Ville must be a string with a maximum length of 20." data-val-length-max="20" data-val-required="La ville est obligatoire" maxlength="20" name="_Ville" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez votre ville de résidence" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Ville" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Code postal<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="The field _Code_Postal must be a string with a maximum length of 10." data-val-length-max="10" data-val-required="Le code postal est obligatoire" maxlength="10" name="_Code_Postal" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,8);" onpaste="return false" title="Indiquez votre code postal" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Code_Postal" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Pays<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-required="Le pays est obligatoire" name="_Pays" title="Indiquez votre pays de résidence"><option value="201">AFGHANISTAN</option>
+<option value="202">AFRIQUE DU SUD</option>
+<option value="203">ALBANIE</option>
+<option value="204">ALGERIE</option>
+<option value="205">ALLEMAGNE</option>
+<option value="206">ANDORRE</option>
+<option value="207">ANGOLA</option>
+<option value="208">ANTIGUA-ET-BARBUDA</option>
+<option value="209">ARABIE SAOUDITE</option>
+<option value="210">ARGENTINE</option>
+<option value="211">ARMENIE</option>
+<option value="213">AUSTRALIE</option>
+<option value="214">AUTRICHE</option>
+<option value="215">AZERBAIDJAN</option>
+<option value="216">BAHAMAS</option>
+<option value="217">BAHREIN</option>
+<option value="218">BANGLADESH</option>
+<option value="219">BARBADE</option>
+<option value="220">BELGIQUE</option>
+<option value="221">BELIZE</option>
+<option value="222">BENIN</option>
+<option value="223">BHOUTAN</option>
+<option value="224">BIELORUSSIE</option>
+<option value="226">BOLIVIE</option>
+<option value="227">BOSNIE-HERZEGOVINE</option>
+<option value="228">BOTSWANA</option>
+<option value="229">BRESIL</option>
+<option value="406">BRUNEI DARUSSALAM</option>
+<option value="231">BULGARIE</option>
+<option value="232">BURKINA FASO</option>
+<option value="233">BURUNDI</option>
+<option value="234">CAMBODGE</option>
+<option value="235">CAMEROUN</option>
+<option value="236">CANADA</option>
+<option value="237">CAP-VERT</option>
+<option value="238">CHILI</option>
+<option value="239">CHINE</option>
+<option value="241">CHYPRE</option>
+<option value="242">COLOMBIE</option>
+<option value="243">COMORES</option>
+<option value="245">CONGO</option>
+<option value="246">COREE DU NORD</option>
+<option value="247">COREE DU SUD</option>
+<option value="248">COSTA RICA</option>
+<option value="249">COTE D’IVOIRE</option>
+<option value="250">CROATIE</option>
+<option value="251">CUBA</option>
+<option value="252">DANEMARK</option>
+<option value="253">DJIBOUTI</option>
+<option value="254">DOMINIQUE</option>
+<option value="255">EGYPTE</option>
+<option value="256">EMIRATS ARABES UNIS</option>
+<option value="257">EQUATEUR</option>
+<option value="258">ERYTHREE</option>
+<option value="259">ESPAGNE</option>
+<option value="260">ESTONIE</option>
+<option value="261">ETATS-UNIS D&#39;AMERIQUE</option>
+<option value="262">ETHIOPIE</option>
+<option value="263">FIDJI</option>
+<option value="264">FINLANDE</option>
+<option value="265">FRANCE</option>
+<option value="266">GABON</option>
+<option value="267">GAMBIE</option>
+<option value="268">GEORGIE</option>
+<option value="269">GHANA</option>
+<option value="407">GIBRALTAR</option>
+<option value="270">GRECE</option>
+<option value="271">GRENADE</option>
+<option value="273">GUATEMALA</option>
+<option value="274">GUINEE</option>
+<option value="275">GUINEE EQUATORIALE</option>
+<option value="276">GUINEE-BISSAU</option>
+<option value="277">GUYANA</option>
+<option value="278">HAITI</option>
+<option value="279">HONDURAS</option>
+<option value="281">HONGRIE</option>
+<option value="408">ILES MARSHALL</option>
+<option value="409">ILES SALOMON</option>
+<option value="286">INDE</option>
+<option value="287">INDONESIE</option>
+<option value="288">IRAK</option>
+<option value="289">IRAN</option>
+<option value="290">IRLANDE</option>
+<option value="291">ISLANDE</option>
+<option value="700">ISRAEL</option>
+<option value="293">ITALIE</option>
+<option value="294">JAMAIQUE</option>
+<option value="295">JAPON</option>
+<option value="296">JORDANIE</option>
+<option value="297">KAZAKHSTAN</option>
+<option value="298">KENYA</option>
+<option value="299">KIRGHIZISTAN</option>
+<option value="300">KIRIBATI</option>
+<option value="301">KOWEIT</option>
+<option value="302">LAOS</option>
+<option value="303">LESOTHO</option>
+<option value="304">LETTONIE</option>
+<option value="305">LIBAN</option>
+<option value="306">LIBERIA</option>
+<option value="307">LIBYE</option>
+<option value="308">LIECHTENSTEIN</option>
+<option value="309">LITUANIE</option>
+<option value="310">LUXEMBOURG</option>
+<option value="311">MACEDOINE</option>
+<option value="312">MADAGASCAR</option>
+<option value="313">MALAISIE</option>
+<option value="314">MALAWI</option>
+<option value="315">MALDIVES</option>
+<option value="316">MALI</option>
+<option value="317">MALTE</option>
+<option selected="selected" value="318">MAROC</option>
+<option value="320">MAURICE</option>
+<option value="321">MAURITANIE</option>
+<option value="322">MEXIQUE</option>
+<option value="323">MICRONESIE</option>
+<option value="324">MOLDAVIE</option>
+<option value="325">MONACO</option>
+<option value="326">MONGOLIE</option>
+<option value="327">MONTENEGRO</option>
+<option value="328">MOZAMBIQUE</option>
+<option value="410">MYANMAR</option>
+<option value="329">NAMIBIE</option>
+<option value="330">NAURU</option>
+<option value="331">NEPAL</option>
+<option value="332">NICARAGUA</option>
+<option value="333">NIGER</option>
+<option value="334">NIGERIA</option>
+<option value="335">NORVEGE</option>
+<option value="336">NOUVELLE-ZELANDE</option>
+<option value="337">OMAN</option>
+<option value="338">OUGANDA</option>
+<option value="339">OUZBEKISTAN</option>
+<option value="340">PAKISTAN</option>
+<option value="341">PALAOS</option>
+<option value="342">PALESTINE</option>
+<option value="343">PANAMA</option>
+<option value="344">PAPOUASIE-NOUVELLE-GUINEE</option>
+<option value="345">PARAGUAY</option>
+<option value="346">PAYS-BAS</option>
+<option value="347">PEROU</option>
+<option value="348">PHILIPPINES</option>
+<option value="349">POLOGNE</option>
+<option value="351">PORTUGAL</option>
+<option value="352">QATAR</option>
+<option value="353">REPUBLIQUE CENTRAFRICAINE</option>
+<option value="412">REPUBLIQUE DEMOCRATIQUE DU CONGO</option>
+<option value="354">REPUBLIQUE DOMINICAINE</option>
+<option value="355">REPUBLIQUE TCHEQUE</option>
+<option value="356">ROUMANIE</option>
+<option value="357">ROYAUME-UNI</option>
+<option value="358">RUSSIE</option>
+<option value="359">RWANDA</option>
+<option value="361">SAINTE-LUCIE</option>
+<option value="411">SAINT-KITTS-ET-NEVIS</option>
+<option value="362">SAINT-MARIN</option>
+<option value="363">SAINT-VINCENT-ET-LES GRENADINES</option>
+<option value="365">SALVADOR</option>
+<option value="366">SAMOA</option>
+<option value="368">SAO TOME-ET-PRINCIPE</option>
+<option value="369">SENEGAL</option>
+<option value="370">SERBIE</option>
+<option value="371">SEYCHELLES</option>
+<option value="372">SIERRA LEONE</option>
+<option value="373">SINGAPOUR</option>
+<option value="374">SLOVAQUIE</option>
+<option value="375">SLOVENIE</option>
+<option value="376">SOMALIE</option>
+<option value="377">SOUDAN</option>
+<option value="378">SRI LANKA</option>
+<option value="379">SUEDE</option>
+<option value="380">SUISSE</option>
+<option value="381">SURINAME</option>
+<option value="382">SWAZILAND</option>
+<option value="383">SYRIE</option>
+<option value="384">TADJIKISTAN</option>
+<option value="385">TANZANIE</option>
+<option value="386">TCHAD</option>
+<option value="388">THAILANDE</option>
+<option value="389">TIMOR LESTE</option>
+<option value="390">TOGO</option>
+<option value="391">TONGA</option>
+<option value="392">TRINITE-ET-TOBAGO</option>
+<option value="393">TUNISIE</option>
+<option value="394">TURKMENISTAN</option>
+<option value="395">TURQUIE</option>
+<option value="396">TUVALU</option>
+<option value="397">UKRAINE</option>
+<option value="398">URUGUAY</option>
+<option value="400">VANUATU</option>
+<option value="401">VENEZUELA</option>
+<option value="402">VIET NAM</option>
+<option value="403">YEMEN</option>
+<option value="404">ZAMBIE</option>
+<option value="405">ZIMBABWE</option>
+</select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Renseignements concernant le représentant légal  -->
+                    <div class="parents" id="Min12Ans" style=display:none;>
+                                <h1 id="headerMin12Ans">
+                                    Renseignements compl&#233;mentaires concernant les parents du mineur de 12 &#224; 18 ans:
+                                </h1>
+
+                        <div class="row">
+                            <div class="form-group col-md-6 rtlformcb">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-6 dwsx">
+                                    <input data-val="true" data-val-required="The PereInconnu field is required." id="pinconnu" name="PereInconnu" type="checkbox" value="true" /><input name="PereInconnu" type="hidden" value="false" />
+                                    <label class="col-form-radio" for="pinconnu">P&#232;re inconnu</label>
+                                </div>
+                                <div class="form-group col-md-8 col-sm-6 col-xs-6 dwsx">
+                                    <input data-val="true" data-val-required="The PereDecede field is required." id="pdecede" name="PereDecede" type="checkbox" value="true" /><input name="PereDecede" type="hidden" value="false" />
+                                    <label class="col-form-radio" for="pdecede">P&#232;re d&#233;c&#233;d&#233; sans document d&#39;identit&#233;</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nom père</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le nom du père est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="nomPere" maxlength="45" name="_Nom_Pere_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le nom de votre père" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Nom_Pere_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Prénom père</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le prénom du père est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="prenomPere" maxlength="45" name="_Prenom_Pere_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le prénom de votre père" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Prenom_Pere_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nationalité père</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le pays du père est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39;’ ]*$" id="paysPere" name="_Pays_Pere" title="Indiquez la nationalité de votre père"><option value="AFGHANISTAN">AFGHANISTAN</option>
+<option value="AFRIQUE DU SUD">AFRIQUE DU SUD</option>
+<option value="ALBANIE">ALBANIE</option>
+<option value="ALGERIE">ALGERIE</option>
+<option value="ALLEMAGNE">ALLEMAGNE</option>
+<option value="ANDORRE">ANDORRE</option>
+<option value="ANGOLA">ANGOLA</option>
+<option value="ANTIGUA-ET-BARBUDA">ANTIGUA-ET-BARBUDA</option>
+<option value="ARABIE SAOUDITE">ARABIE SAOUDITE</option>
+<option value="ARGENTINE">ARGENTINE</option>
+<option value="ARMENIE">ARMENIE</option>
+<option value="AUSTRALIE">AUSTRALIE</option>
+<option value="AUTRICHE">AUTRICHE</option>
+<option value="AZERBAIDJAN">AZERBAIDJAN</option>
+<option value="BAHAMAS">BAHAMAS</option>
+<option value="BAHREIN">BAHREIN</option>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="BARBADE">BARBADE</option>
+<option value="BELGIQUE">BELGIQUE</option>
+<option value="BELIZE">BELIZE</option>
+<option value="BENIN">BENIN</option>
+<option value="BHOUTAN">BHOUTAN</option>
+<option value="BIELORUSSIE">BIELORUSSIE</option>
+<option value="BOLIVIE">BOLIVIE</option>
+<option value="BOSNIE-HERZEGOVINE">BOSNIE-HERZEGOVINE</option>
+<option value="BOTSWANA">BOTSWANA</option>
+<option value="BRESIL">BRESIL</option>
+<option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option>
+<option value="BULGARIE">BULGARIE</option>
+<option value="BURKINA FASO">BURKINA FASO</option>
+<option value="BURUNDI">BURUNDI</option>
+<option value="CAMBODGE">CAMBODGE</option>
+<option value="CAMEROUN">CAMEROUN</option>
+<option value="CANADA">CANADA</option>
+<option value="CAP-VERT">CAP-VERT</option>
+<option value="CHILI">CHILI</option>
+<option value="CHINE">CHINE</option>
+<option value="CHYPRE">CHYPRE</option>
+<option value="COLOMBIE">COLOMBIE</option>
+<option value="COMORES">COMORES</option>
+<option value="CONGO">CONGO</option>
+<option value="COREE DU NORD">COREE DU NORD</option>
+<option value="COREE DU SUD">COREE DU SUD</option>
+<option value="COSTA RICA">COSTA RICA</option>
+<option value="COTE D’IVOIRE">COTE D’IVOIRE</option>
+<option value="CROATIE">CROATIE</option>
+<option value="CUBA">CUBA</option>
+<option value="DANEMARK">DANEMARK</option>
+<option value="DJIBOUTI">DJIBOUTI</option>
+<option value="DOMINIQUE">DOMINIQUE</option>
+<option value="EGYPTE">EGYPTE</option>
+<option value="EMIRATS ARABES UNIS">EMIRATS ARABES UNIS</option>
+<option value="EQUATEUR">EQUATEUR</option>
+<option value="ERYTHREE">ERYTHREE</option>
+<option value="ESPAGNE">ESPAGNE</option>
+<option value="ESTONIE">ESTONIE</option>
+<option value="ETATS-UNIS D&#39;AMERIQUE">ETATS-UNIS D&#39;AMERIQUE</option>
+<option value="ETHIOPIE">ETHIOPIE</option>
+<option value="FIDJI">FIDJI</option>
+<option value="FINLANDE">FINLANDE</option>
+<option value="FRANCE">FRANCE</option>
+<option value="GABON">GABON</option>
+<option value="GAMBIE">GAMBIE</option>
+<option value="GEORGIE">GEORGIE</option>
+<option value="GHANA">GHANA</option>
+<option value="GIBRALTAR">GIBRALTAR</option>
+<option value="GRECE">GRECE</option>
+<option value="GRENADE">GRENADE</option>
+<option value="GUATEMALA">GUATEMALA</option>
+<option value="GUINEE">GUINEE</option>
+<option value="GUINEE EQUATORIALE">GUINEE EQUATORIALE</option>
+<option value="GUINEE-BISSAU">GUINEE-BISSAU</option>
+<option value="GUYANA">GUYANA</option>
+<option value="HAITI">HAITI</option>
+<option value="HONDURAS">HONDURAS</option>
+<option value="HONGRIE">HONGRIE</option>
+<option value="ILES MARSHALL">ILES MARSHALL</option>
+<option value="ILES SALOMON">ILES SALOMON</option>
+<option value="INDE">INDE</option>
+<option value="INDONESIE">INDONESIE</option>
+<option value="IRAK">IRAK</option>
+<option value="IRAN">IRAN</option>
+<option value="IRLANDE">IRLANDE</option>
+<option value="ISLANDE">ISLANDE</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALIE">ITALIE</option>
+<option value="JAMAIQUE">JAMAIQUE</option>
+<option value="JAPON">JAPON</option>
+<option value="JORDANIE">JORDANIE</option>
+<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+<option value="KENYA">KENYA</option>
+<option value="KIRGHIZISTAN">KIRGHIZISTAN</option>
+<option value="KIRIBATI">KIRIBATI</option>
+<option value="KOWEIT">KOWEIT</option>
+<option value="LAOS">LAOS</option>
+<option value="LESOTHO">LESOTHO</option>
+<option value="LETTONIE">LETTONIE</option>
+<option value="LIBAN">LIBAN</option>
+<option value="LIBERIA">LIBERIA</option>
+<option value="LIBYE">LIBYE</option>
+<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+<option value="LITUANIE">LITUANIE</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MACEDOINE">MACEDOINE</option>
+<option value="MADAGASCAR">MADAGASCAR</option>
+<option value="MALAISIE">MALAISIE</option>
+<option value="MALAWI">MALAWI</option>
+<option value="MALDIVES">MALDIVES</option>
+<option value="MALI">MALI</option>
+<option value="MALTE">MALTE</option>
+<option selected="selected" value="MAROC">MAROC</option>
+<option value="MAURICE">MAURICE</option>
+<option value="MAURITANIE">MAURITANIE</option>
+<option value="MEXIQUE">MEXIQUE</option>
+<option value="MICRONESIE">MICRONESIE</option>
+<option value="MOLDAVIE">MOLDAVIE</option>
+<option value="MONACO">MONACO</option>
+<option value="MONGOLIE">MONGOLIE</option>
+<option value="MONTENEGRO">MONTENEGRO</option>
+<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+<option value="MYANMAR">MYANMAR</option>
+<option value="NAMIBIE">NAMIBIE</option>
+<option value="NAURU">NAURU</option>
+<option value="NEPAL">NEPAL</option>
+<option value="NICARAGUA">NICARAGUA</option>
+<option value="NIGER">NIGER</option>
+<option value="NIGERIA">NIGERIA</option>
+<option value="NORVEGE">NORVEGE</option>
+<option value="NOUVELLE-ZELANDE">NOUVELLE-ZELANDE</option>
+<option value="OMAN">OMAN</option>
+<option value="OUGANDA">OUGANDA</option>
+<option value="OUZBEKISTAN">OUZBEKISTAN</option>
+<option value="PAKISTAN">PAKISTAN</option>
+<option value="PALAOS">PALAOS</option>
+<option value="PALESTINE">PALESTINE</option>
+<option value="PANAMA">PANAMA</option>
+<option value="PAPOUASIE-NOUVELLE-GUINEE">PAPOUASIE-NOUVELLE-GUINEE</option>
+<option value="PARAGUAY">PARAGUAY</option>
+<option value="PAYS-BAS">PAYS-BAS</option>
+<option value="PEROU">PEROU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="POLOGNE">POLOGNE</option>
+<option value="PORTUGAL">PORTUGAL</option>
+<option value="QATAR">QATAR</option>
+<option value="REPUBLIQUE CENTRAFRICAINE">REPUBLIQUE CENTRAFRICAINE</option>
+<option value="REPUBLIQUE DEMOCRATIQUE DU CONGO">REPUBLIQUE DEMOCRATIQUE DU CONGO</option>
+<option value="REPUBLIQUE DOMINICAINE">REPUBLIQUE DOMINICAINE</option>
+<option value="REPUBLIQUE TCHEQUE">REPUBLIQUE TCHEQUE</option>
+<option value="ROUMANIE">ROUMANIE</option>
+<option value="ROYAUME-UNI">ROYAUME-UNI</option>
+<option value="RUSSIE">RUSSIE</option>
+<option value="RWANDA">RWANDA</option>
+<option value="SAINTE-LUCIE">SAINTE-LUCIE</option>
+<option value="SAINT-KITTS-ET-NEVIS">SAINT-KITTS-ET-NEVIS</option>
+<option value="SAINT-MARIN">SAINT-MARIN</option>
+<option value="SAINT-VINCENT-ET-LES GRENADINES">SAINT-VINCENT-ET-LES GRENADINES</option>
+<option value="SALVADOR">SALVADOR</option>
+<option value="SAMOA">SAMOA</option>
+<option value="SAO TOME-ET-PRINCIPE">SAO TOME-ET-PRINCIPE</option>
+<option value="SENEGAL">SENEGAL</option>
+<option value="SERBIE">SERBIE</option>
+<option value="SEYCHELLES">SEYCHELLES</option>
+<option value="SIERRA LEONE">SIERRA LEONE</option>
+<option value="SINGAPOUR">SINGAPOUR</option>
+<option value="SLOVAQUIE">SLOVAQUIE</option>
+<option value="SLOVENIE">SLOVENIE</option>
+<option value="SOMALIE">SOMALIE</option>
+<option value="SOUDAN">SOUDAN</option>
+<option value="SRI LANKA">SRI LANKA</option>
+<option value="SUEDE">SUEDE</option>
+<option value="SUISSE">SUISSE</option>
+<option value="SURINAME">SURINAME</option>
+<option value="SWAZILAND">SWAZILAND</option>
+<option value="SYRIE">SYRIE</option>
+<option value="TADJIKISTAN">TADJIKISTAN</option>
+<option value="TANZANIE">TANZANIE</option>
+<option value="TCHAD">TCHAD</option>
+<option value="THAILANDE">THAILANDE</option>
+<option value="TIMOR LESTE">TIMOR LESTE</option>
+<option value="TOGO">TOGO</option>
+<option value="TONGA">TONGA</option>
+<option value="TRINITE-ET-TOBAGO">TRINITE-ET-TOBAGO</option>
+<option value="TUNISIE">TUNISIE</option>
+<option value="TURKMENISTAN">TURKMENISTAN</option>
+<option value="TURQUIE">TURQUIE</option>
+<option value="TUVALU">TUVALU</option>
+<option value="UKRAINE">UKRAINE</option>
+<option value="URUGUAY">URUGUAY</option>
+<option value="VANUATU">VANUATU</option>
+<option value="VENEZUELA">VENEZUELA</option>
+<option value="VIET NAM">VIET NAM</option>
+<option value="YEMEN">YEMEN</option>
+<option value="ZAMBIE">ZAMBIE</option>
+<option value="ZIMBABWE">ZIMBABWE</option>
+</select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label col-form-label-2lien pr">Type pièce identité père</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-number="Le champ _Type_CNIE_Pere doit être un nombre." data-val-required="The _Type_CNIE_Pere field is required." id="typeIdPere" name="_Type_CNIE_Pere" title="Indiquez le type de la pièce d&#39;identité de votre père"><option selected="selected" value="0">Selectionnez</option>
+<option value="1">CNIE</option>
+<option value="2">Passeport marocain</option>
+<option value="3">Carte d’immatriculation</option>
+<option value="4">Passeport &#233;tranger</option>
+<option value="5">Carte d’identit&#233; &#233;trang&#232;re</option>
+<option value="6">Autres</option>
+</select>
+                                    <span class="field-validation-valid" data-valmsg-for="_Type_CNIE_Pere" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label col-form-label-2lien pr">N° pièce identité père</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" id="numCniePere" maxlength="10" name="_Num_CNIE_Pere" onBlur="this.value = ValidateInput(this, 3); ValidateInput(this, 7);" oncopy="return false" onkeypress="return GetMyKeyCode(this,4,1);" onpaste="return false" title="Indiquez le numéro de la pièce d&#39;identité de votre père" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Num_CNIE_Pere" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="form-group col-md-6 rtlformcb">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-6 dwsx">
+                                    <input data-val="true" data-val-required="The MereInconnu field is required." id="minconnu" name="MereInconnu" type="checkbox" value="true" /><input name="MereInconnu" type="hidden" value="false" />
+                                    <label class="col-form-radio" for="minconnu">M&#232;re inconnue</label>
+                                </div>
+                                <div class="form-group col-md-8 col-sm-6 col-xs-6 dwsx">
+                                    <input data-val="true" data-val-required="The MereDecede field is required." id="mdecede" name="MereDecede" type="checkbox" value="true" /><input name="MereDecede" type="hidden" value="false" />
+                                    <label class="col-form-radio" for="mdecede">M&#232;re d&#233;c&#233;d&#233;e sans document d&#39;identit&#233;</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nom mère</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le nom du mère est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="nomMere" maxlength="45" name="_Nom_Mere_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le nom de votre mère" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Nom_Mere_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Prénom mère</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le prénom du mère est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="prenomMere" maxlength="45" name="_Prenom_Mere_FR" onBlur="this.value = ValidateInput(this, 3)" onkeypress="return GetMyKeyCode(this,5);" title="Indiquez le prénom de votre mère" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Prenom_Mere_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nationalité mère</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le pays de la mère est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39;’ ]*$" id="paysMere" name="_Pays_Mere" title="Indiquez la nationalité de votre mère"><option value="AFGHANISTAN">AFGHANISTAN</option>
+<option value="AFRIQUE DU SUD">AFRIQUE DU SUD</option>
+<option value="ALBANIE">ALBANIE</option>
+<option value="ALGERIE">ALGERIE</option>
+<option value="ALLEMAGNE">ALLEMAGNE</option>
+<option value="ANDORRE">ANDORRE</option>
+<option value="ANGOLA">ANGOLA</option>
+<option value="ANTIGUA-ET-BARBUDA">ANTIGUA-ET-BARBUDA</option>
+<option value="ARABIE SAOUDITE">ARABIE SAOUDITE</option>
+<option value="ARGENTINE">ARGENTINE</option>
+<option value="ARMENIE">ARMENIE</option>
+<option value="AUSTRALIE">AUSTRALIE</option>
+<option value="AUTRICHE">AUTRICHE</option>
+<option value="AZERBAIDJAN">AZERBAIDJAN</option>
+<option value="BAHAMAS">BAHAMAS</option>
+<option value="BAHREIN">BAHREIN</option>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="BARBADE">BARBADE</option>
+<option value="BELGIQUE">BELGIQUE</option>
+<option value="BELIZE">BELIZE</option>
+<option value="BENIN">BENIN</option>
+<option value="BHOUTAN">BHOUTAN</option>
+<option value="BIELORUSSIE">BIELORUSSIE</option>
+<option value="BOLIVIE">BOLIVIE</option>
+<option value="BOSNIE-HERZEGOVINE">BOSNIE-HERZEGOVINE</option>
+<option value="BOTSWANA">BOTSWANA</option>
+<option value="BRESIL">BRESIL</option>
+<option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option>
+<option value="BULGARIE">BULGARIE</option>
+<option value="BURKINA FASO">BURKINA FASO</option>
+<option value="BURUNDI">BURUNDI</option>
+<option value="CAMBODGE">CAMBODGE</option>
+<option value="CAMEROUN">CAMEROUN</option>
+<option value="CANADA">CANADA</option>
+<option value="CAP-VERT">CAP-VERT</option>
+<option value="CHILI">CHILI</option>
+<option value="CHINE">CHINE</option>
+<option value="CHYPRE">CHYPRE</option>
+<option value="COLOMBIE">COLOMBIE</option>
+<option value="COMORES">COMORES</option>
+<option value="CONGO">CONGO</option>
+<option value="COREE DU NORD">COREE DU NORD</option>
+<option value="COREE DU SUD">COREE DU SUD</option>
+<option value="COSTA RICA">COSTA RICA</option>
+<option value="COTE D’IVOIRE">COTE D’IVOIRE</option>
+<option value="CROATIE">CROATIE</option>
+<option value="CUBA">CUBA</option>
+<option value="DANEMARK">DANEMARK</option>
+<option value="DJIBOUTI">DJIBOUTI</option>
+<option value="DOMINIQUE">DOMINIQUE</option>
+<option value="EGYPTE">EGYPTE</option>
+<option value="EMIRATS ARABES UNIS">EMIRATS ARABES UNIS</option>
+<option value="EQUATEUR">EQUATEUR</option>
+<option value="ERYTHREE">ERYTHREE</option>
+<option value="ESPAGNE">ESPAGNE</option>
+<option value="ESTONIE">ESTONIE</option>
+<option value="ETATS-UNIS D&#39;AMERIQUE">ETATS-UNIS D&#39;AMERIQUE</option>
+<option value="ETHIOPIE">ETHIOPIE</option>
+<option value="FIDJI">FIDJI</option>
+<option value="FINLANDE">FINLANDE</option>
+<option value="FRANCE">FRANCE</option>
+<option value="GABON">GABON</option>
+<option value="GAMBIE">GAMBIE</option>
+<option value="GEORGIE">GEORGIE</option>
+<option value="GHANA">GHANA</option>
+<option value="GIBRALTAR">GIBRALTAR</option>
+<option value="GRECE">GRECE</option>
+<option value="GRENADE">GRENADE</option>
+<option value="GUATEMALA">GUATEMALA</option>
+<option value="GUINEE">GUINEE</option>
+<option value="GUINEE EQUATORIALE">GUINEE EQUATORIALE</option>
+<option value="GUINEE-BISSAU">GUINEE-BISSAU</option>
+<option value="GUYANA">GUYANA</option>
+<option value="HAITI">HAITI</option>
+<option value="HONDURAS">HONDURAS</option>
+<option value="HONGRIE">HONGRIE</option>
+<option value="ILES MARSHALL">ILES MARSHALL</option>
+<option value="ILES SALOMON">ILES SALOMON</option>
+<option value="INDE">INDE</option>
+<option value="INDONESIE">INDONESIE</option>
+<option value="IRAK">IRAK</option>
+<option value="IRAN">IRAN</option>
+<option value="IRLANDE">IRLANDE</option>
+<option value="ISLANDE">ISLANDE</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALIE">ITALIE</option>
+<option value="JAMAIQUE">JAMAIQUE</option>
+<option value="JAPON">JAPON</option>
+<option value="JORDANIE">JORDANIE</option>
+<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+<option value="KENYA">KENYA</option>
+<option value="KIRGHIZISTAN">KIRGHIZISTAN</option>
+<option value="KIRIBATI">KIRIBATI</option>
+<option value="KOWEIT">KOWEIT</option>
+<option value="LAOS">LAOS</option>
+<option value="LESOTHO">LESOTHO</option>
+<option value="LETTONIE">LETTONIE</option>
+<option value="LIBAN">LIBAN</option>
+<option value="LIBERIA">LIBERIA</option>
+<option value="LIBYE">LIBYE</option>
+<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+<option value="LITUANIE">LITUANIE</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MACEDOINE">MACEDOINE</option>
+<option value="MADAGASCAR">MADAGASCAR</option>
+<option value="MALAISIE">MALAISIE</option>
+<option value="MALAWI">MALAWI</option>
+<option value="MALDIVES">MALDIVES</option>
+<option value="MALI">MALI</option>
+<option value="MALTE">MALTE</option>
+<option selected="selected" value="MAROC">MAROC</option>
+<option value="MAURICE">MAURICE</option>
+<option value="MAURITANIE">MAURITANIE</option>
+<option value="MEXIQUE">MEXIQUE</option>
+<option value="MICRONESIE">MICRONESIE</option>
+<option value="MOLDAVIE">MOLDAVIE</option>
+<option value="MONACO">MONACO</option>
+<option value="MONGOLIE">MONGOLIE</option>
+<option value="MONTENEGRO">MONTENEGRO</option>
+<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+<option value="MYANMAR">MYANMAR</option>
+<option value="NAMIBIE">NAMIBIE</option>
+<option value="NAURU">NAURU</option>
+<option value="NEPAL">NEPAL</option>
+<option value="NICARAGUA">NICARAGUA</option>
+<option value="NIGER">NIGER</option>
+<option value="NIGERIA">NIGERIA</option>
+<option value="NORVEGE">NORVEGE</option>
+<option value="NOUVELLE-ZELANDE">NOUVELLE-ZELANDE</option>
+<option value="OMAN">OMAN</option>
+<option value="OUGANDA">OUGANDA</option>
+<option value="OUZBEKISTAN">OUZBEKISTAN</option>
+<option value="PAKISTAN">PAKISTAN</option>
+<option value="PALAOS">PALAOS</option>
+<option value="PALESTINE">PALESTINE</option>
+<option value="PANAMA">PANAMA</option>
+<option value="PAPOUASIE-NOUVELLE-GUINEE">PAPOUASIE-NOUVELLE-GUINEE</option>
+<option value="PARAGUAY">PARAGUAY</option>
+<option value="PAYS-BAS">PAYS-BAS</option>
+<option value="PEROU">PEROU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="POLOGNE">POLOGNE</option>
+<option value="PORTUGAL">PORTUGAL</option>
+<option value="QATAR">QATAR</option>
+<option value="REPUBLIQUE CENTRAFRICAINE">REPUBLIQUE CENTRAFRICAINE</option>
+<option value="REPUBLIQUE DEMOCRATIQUE DU CONGO">REPUBLIQUE DEMOCRATIQUE DU CONGO</option>
+<option value="REPUBLIQUE DOMINICAINE">REPUBLIQUE DOMINICAINE</option>
+<option value="REPUBLIQUE TCHEQUE">REPUBLIQUE TCHEQUE</option>
+<option value="ROUMANIE">ROUMANIE</option>
+<option value="ROYAUME-UNI">ROYAUME-UNI</option>
+<option value="RUSSIE">RUSSIE</option>
+<option value="RWANDA">RWANDA</option>
+<option value="SAINTE-LUCIE">SAINTE-LUCIE</option>
+<option value="SAINT-KITTS-ET-NEVIS">SAINT-KITTS-ET-NEVIS</option>
+<option value="SAINT-MARIN">SAINT-MARIN</option>
+<option value="SAINT-VINCENT-ET-LES GRENADINES">SAINT-VINCENT-ET-LES GRENADINES</option>
+<option value="SALVADOR">SALVADOR</option>
+<option value="SAMOA">SAMOA</option>
+<option value="SAO TOME-ET-PRINCIPE">SAO TOME-ET-PRINCIPE</option>
+<option value="SENEGAL">SENEGAL</option>
+<option value="SERBIE">SERBIE</option>
+<option value="SEYCHELLES">SEYCHELLES</option>
+<option value="SIERRA LEONE">SIERRA LEONE</option>
+<option value="SINGAPOUR">SINGAPOUR</option>
+<option value="SLOVAQUIE">SLOVAQUIE</option>
+<option value="SLOVENIE">SLOVENIE</option>
+<option value="SOMALIE">SOMALIE</option>
+<option value="SOUDAN">SOUDAN</option>
+<option value="SRI LANKA">SRI LANKA</option>
+<option value="SUEDE">SUEDE</option>
+<option value="SUISSE">SUISSE</option>
+<option value="SURINAME">SURINAME</option>
+<option value="SWAZILAND">SWAZILAND</option>
+<option value="SYRIE">SYRIE</option>
+<option value="TADJIKISTAN">TADJIKISTAN</option>
+<option value="TANZANIE">TANZANIE</option>
+<option value="TCHAD">TCHAD</option>
+<option value="THAILANDE">THAILANDE</option>
+<option value="TIMOR LESTE">TIMOR LESTE</option>
+<option value="TOGO">TOGO</option>
+<option value="TONGA">TONGA</option>
+<option value="TRINITE-ET-TOBAGO">TRINITE-ET-TOBAGO</option>
+<option value="TUNISIE">TUNISIE</option>
+<option value="TURKMENISTAN">TURKMENISTAN</option>
+<option value="TURQUIE">TURQUIE</option>
+<option value="TUVALU">TUVALU</option>
+<option value="UKRAINE">UKRAINE</option>
+<option value="URUGUAY">URUGUAY</option>
+<option value="VANUATU">VANUATU</option>
+<option value="VENEZUELA">VENEZUELA</option>
+<option value="VIET NAM">VIET NAM</option>
+<option value="YEMEN">YEMEN</option>
+<option value="ZAMBIE">ZAMBIE</option>
+<option value="ZIMBABWE">ZIMBABWE</option>
+</select>
+                                    <span class="field-validation-valid" data-valmsg-for="_Pays_Mere" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label col-form-label-2lien pr">Type pièce identité mère</label>
+                                <div class="col-sm-9">
+
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-number="Le champ _Type_CNIE_Mere doit être un nombre." data-val-required="The _Type_CNIE_Mere field is required." id="typeIdMere" name="_Type_CNIE_Mere" title="Indiquez le type de la pièce d&#39;identité de votre mère"><option selected="selected" value="0">Selectionnez</option>
+<option value="1">CNIE</option>
+<option value="2">Passeport marocain</option>
+<option value="3">Carte d’immatriculation</option>
+<option value="4">Passeport &#233;tranger</option>
+<option value="5">Carte d’identit&#233; &#233;trang&#232;re</option>
+<option value="6">Autres</option>
+</select>
+                                    <span class="field-validation-valid" data-valmsg-for="_Type_CNIE_Mere" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label col-form-label-2lien pr">N° pièce identité mère</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" id="numCnieMere" maxlength="10" name="_Num_CNIE_Mere" onBlur="this.value = ValidateInput(this, 3); ValidateInput(this, 7);" oncopy="return false" onkeypress="return GetMyKeyCode(this,4,1);" onpaste="return false" title="Indiquez le numéro de la pièce d&#39;identité de votre mère" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Num_CNIE_Mere" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!-- Renseignements concernant le représentant légal  -->
+                    <div id="RepLegal" style=display:none;>
+                        <h1>Renseignements concernant le repr&#233;sentant l&#233;gal<span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" title="Le p&#232;re demeure le repr&#233;sentant l&#233;gal de ses enfants mineurs m&#234;me apr&#232;s le divorce. La garde des enfants mineurs ne conf&#232;re pas &#224; la m&#232;re la qualit&#233; de repr&#233;sentant l&#233;gal de ses enfants. De ce fait, l’accord du p&#232;re est n&#233;cessaire pour &#233;tablir un passeport pour un enfant mineur. En cas de refus du p&#232;re, la m&#232;re doit obtenir une d&#233;cision l’autorisant &#224; demander la d&#233;livrance de passeports &#224; ses enfants."></span> :</h1>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label col-form-label-2lien pr">Agissant en qualité de<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-number="Le champ _Code_Qualite_Representant doit être un nombre." data-val-required="The _Code_Qualite_Representant field is required." id="ddlQualiteRep" name="_Code_Qualite_Representant" title="Sélectionnez le choix correspondant à la qualité du représentant légal"><option selected="selected" value="0">Selectionnez</option>
+<option value="1">P&#232;re</option>
+<option value="2">M&#232;re</option>
+<option value="3">Tuteur testamentaire</option>
+<option value="4">Kafil</option>
+<option value="5">Juge</option>
+<option value="6">Tuteur datif</option>
+<option value="7">Autre</option>
+</select>
+                                    <span class="field-validation-valid" data-valmsg-for="_Code_Qualite_Representant" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nom<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le nom du representant légal est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="nomRep" maxlength="45" name="_Nom_Rep_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le nom du représentant légal" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Nom_Rep_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Prénom<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le nom du representant légal est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="prenomRep" maxlength="45" name="_Prenom_Rep_FR" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le prénom du représentant légal" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Prenom_Rep_FR" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nationalité<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" id="paysRep" name="_Pays_Representant" title="Indiquez la nationalité du représentant légal"><option value="AFGHANISTAN">AFGHANISTAN</option>
+<option value="AFRIQUE DU SUD">AFRIQUE DU SUD</option>
+<option value="ALBANIE">ALBANIE</option>
+<option value="ALGERIE">ALGERIE</option>
+<option value="ALLEMAGNE">ALLEMAGNE</option>
+<option value="ANDORRE">ANDORRE</option>
+<option value="ANGOLA">ANGOLA</option>
+<option value="ANTIGUA-ET-BARBUDA">ANTIGUA-ET-BARBUDA</option>
+<option value="ARABIE SAOUDITE">ARABIE SAOUDITE</option>
+<option value="ARGENTINE">ARGENTINE</option>
+<option value="ARMENIE">ARMENIE</option>
+<option value="AUSTRALIE">AUSTRALIE</option>
+<option value="AUTRICHE">AUTRICHE</option>
+<option value="AZERBAIDJAN">AZERBAIDJAN</option>
+<option value="BAHAMAS">BAHAMAS</option>
+<option value="BAHREIN">BAHREIN</option>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="BARBADE">BARBADE</option>
+<option value="BELGIQUE">BELGIQUE</option>
+<option value="BELIZE">BELIZE</option>
+<option value="BENIN">BENIN</option>
+<option value="BHOUTAN">BHOUTAN</option>
+<option value="BIELORUSSIE">BIELORUSSIE</option>
+<option value="BOLIVIE">BOLIVIE</option>
+<option value="BOSNIE-HERZEGOVINE">BOSNIE-HERZEGOVINE</option>
+<option value="BOTSWANA">BOTSWANA</option>
+<option value="BRESIL">BRESIL</option>
+<option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option>
+<option value="BULGARIE">BULGARIE</option>
+<option value="BURKINA FASO">BURKINA FASO</option>
+<option value="BURUNDI">BURUNDI</option>
+<option value="CAMBODGE">CAMBODGE</option>
+<option value="CAMEROUN">CAMEROUN</option>
+<option value="CANADA">CANADA</option>
+<option value="CAP-VERT">CAP-VERT</option>
+<option value="CHILI">CHILI</option>
+<option value="CHINE">CHINE</option>
+<option value="CHYPRE">CHYPRE</option>
+<option value="COLOMBIE">COLOMBIE</option>
+<option value="COMORES">COMORES</option>
+<option value="CONGO">CONGO</option>
+<option value="COREE DU NORD">COREE DU NORD</option>
+<option value="COREE DU SUD">COREE DU SUD</option>
+<option value="COSTA RICA">COSTA RICA</option>
+<option value="COTE D’IVOIRE">COTE D’IVOIRE</option>
+<option value="CROATIE">CROATIE</option>
+<option value="CUBA">CUBA</option>
+<option value="DANEMARK">DANEMARK</option>
+<option value="DJIBOUTI">DJIBOUTI</option>
+<option value="DOMINIQUE">DOMINIQUE</option>
+<option value="EGYPTE">EGYPTE</option>
+<option value="EMIRATS ARABES UNIS">EMIRATS ARABES UNIS</option>
+<option value="EQUATEUR">EQUATEUR</option>
+<option value="ERYTHREE">ERYTHREE</option>
+<option value="ESPAGNE">ESPAGNE</option>
+<option value="ESTONIE">ESTONIE</option>
+<option value="ETATS-UNIS D&#39;AMERIQUE">ETATS-UNIS D&#39;AMERIQUE</option>
+<option value="ETHIOPIE">ETHIOPIE</option>
+<option value="FIDJI">FIDJI</option>
+<option value="FINLANDE">FINLANDE</option>
+<option value="FRANCE">FRANCE</option>
+<option value="GABON">GABON</option>
+<option value="GAMBIE">GAMBIE</option>
+<option value="GEORGIE">GEORGIE</option>
+<option value="GHANA">GHANA</option>
+<option value="GIBRALTAR">GIBRALTAR</option>
+<option value="GRECE">GRECE</option>
+<option value="GRENADE">GRENADE</option>
+<option value="GUATEMALA">GUATEMALA</option>
+<option value="GUINEE">GUINEE</option>
+<option value="GUINEE EQUATORIALE">GUINEE EQUATORIALE</option>
+<option value="GUINEE-BISSAU">GUINEE-BISSAU</option>
+<option value="GUYANA">GUYANA</option>
+<option value="HAITI">HAITI</option>
+<option value="HONDURAS">HONDURAS</option>
+<option value="HONGRIE">HONGRIE</option>
+<option value="ILES MARSHALL">ILES MARSHALL</option>
+<option value="ILES SALOMON">ILES SALOMON</option>
+<option value="INDE">INDE</option>
+<option value="INDONESIE">INDONESIE</option>
+<option value="IRAK">IRAK</option>
+<option value="IRAN">IRAN</option>
+<option value="IRLANDE">IRLANDE</option>
+<option value="ISLANDE">ISLANDE</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALIE">ITALIE</option>
+<option value="JAMAIQUE">JAMAIQUE</option>
+<option value="JAPON">JAPON</option>
+<option value="JORDANIE">JORDANIE</option>
+<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+<option value="KENYA">KENYA</option>
+<option value="KIRGHIZISTAN">KIRGHIZISTAN</option>
+<option value="KIRIBATI">KIRIBATI</option>
+<option value="KOWEIT">KOWEIT</option>
+<option value="LAOS">LAOS</option>
+<option value="LESOTHO">LESOTHO</option>
+<option value="LETTONIE">LETTONIE</option>
+<option value="LIBAN">LIBAN</option>
+<option value="LIBERIA">LIBERIA</option>
+<option value="LIBYE">LIBYE</option>
+<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+<option value="LITUANIE">LITUANIE</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MACEDOINE">MACEDOINE</option>
+<option value="MADAGASCAR">MADAGASCAR</option>
+<option value="MALAISIE">MALAISIE</option>
+<option value="MALAWI">MALAWI</option>
+<option value="MALDIVES">MALDIVES</option>
+<option value="MALI">MALI</option>
+<option value="MALTE">MALTE</option>
+<option selected="selected" value="MAROC">MAROC</option>
+<option value="MAURICE">MAURICE</option>
+<option value="MAURITANIE">MAURITANIE</option>
+<option value="MEXIQUE">MEXIQUE</option>
+<option value="MICRONESIE">MICRONESIE</option>
+<option value="MOLDAVIE">MOLDAVIE</option>
+<option value="MONACO">MONACO</option>
+<option value="MONGOLIE">MONGOLIE</option>
+<option value="MONTENEGRO">MONTENEGRO</option>
+<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+<option value="MYANMAR">MYANMAR</option>
+<option value="NAMIBIE">NAMIBIE</option>
+<option value="NAURU">NAURU</option>
+<option value="NEPAL">NEPAL</option>
+<option value="NICARAGUA">NICARAGUA</option>
+<option value="NIGER">NIGER</option>
+<option value="NIGERIA">NIGERIA</option>
+<option value="NORVEGE">NORVEGE</option>
+<option value="NOUVELLE-ZELANDE">NOUVELLE-ZELANDE</option>
+<option value="OMAN">OMAN</option>
+<option value="OUGANDA">OUGANDA</option>
+<option value="OUZBEKISTAN">OUZBEKISTAN</option>
+<option value="PAKISTAN">PAKISTAN</option>
+<option value="PALAOS">PALAOS</option>
+<option value="PALESTINE">PALESTINE</option>
+<option value="PANAMA">PANAMA</option>
+<option value="PAPOUASIE-NOUVELLE-GUINEE">PAPOUASIE-NOUVELLE-GUINEE</option>
+<option value="PARAGUAY">PARAGUAY</option>
+<option value="PAYS-BAS">PAYS-BAS</option>
+<option value="PEROU">PEROU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="POLOGNE">POLOGNE</option>
+<option value="PORTUGAL">PORTUGAL</option>
+<option value="QATAR">QATAR</option>
+<option value="REPUBLIQUE CENTRAFRICAINE">REPUBLIQUE CENTRAFRICAINE</option>
+<option value="REPUBLIQUE DEMOCRATIQUE DU CONGO">REPUBLIQUE DEMOCRATIQUE DU CONGO</option>
+<option value="REPUBLIQUE DOMINICAINE">REPUBLIQUE DOMINICAINE</option>
+<option value="REPUBLIQUE TCHEQUE">REPUBLIQUE TCHEQUE</option>
+<option value="ROUMANIE">ROUMANIE</option>
+<option value="ROYAUME-UNI">ROYAUME-UNI</option>
+<option value="RUSSIE">RUSSIE</option>
+<option value="RWANDA">RWANDA</option>
+<option value="SAINTE-LUCIE">SAINTE-LUCIE</option>
+<option value="SAINT-KITTS-ET-NEVIS">SAINT-KITTS-ET-NEVIS</option>
+<option value="SAINT-MARIN">SAINT-MARIN</option>
+<option value="SAINT-VINCENT-ET-LES GRENADINES">SAINT-VINCENT-ET-LES GRENADINES</option>
+<option value="SALVADOR">SALVADOR</option>
+<option value="SAMOA">SAMOA</option>
+<option value="SAO TOME-ET-PRINCIPE">SAO TOME-ET-PRINCIPE</option>
+<option value="SENEGAL">SENEGAL</option>
+<option value="SERBIE">SERBIE</option>
+<option value="SEYCHELLES">SEYCHELLES</option>
+<option value="SIERRA LEONE">SIERRA LEONE</option>
+<option value="SINGAPOUR">SINGAPOUR</option>
+<option value="SLOVAQUIE">SLOVAQUIE</option>
+<option value="SLOVENIE">SLOVENIE</option>
+<option value="SOMALIE">SOMALIE</option>
+<option value="SOUDAN">SOUDAN</option>
+<option value="SRI LANKA">SRI LANKA</option>
+<option value="SUEDE">SUEDE</option>
+<option value="SUISSE">SUISSE</option>
+<option value="SURINAME">SURINAME</option>
+<option value="SWAZILAND">SWAZILAND</option>
+<option value="SYRIE">SYRIE</option>
+<option value="TADJIKISTAN">TADJIKISTAN</option>
+<option value="TANZANIE">TANZANIE</option>
+<option value="TCHAD">TCHAD</option>
+<option value="THAILANDE">THAILANDE</option>
+<option value="TIMOR LESTE">TIMOR LESTE</option>
+<option value="TOGO">TOGO</option>
+<option value="TONGA">TONGA</option>
+<option value="TRINITE-ET-TOBAGO">TRINITE-ET-TOBAGO</option>
+<option value="TUNISIE">TUNISIE</option>
+<option value="TURKMENISTAN">TURKMENISTAN</option>
+<option value="TURQUIE">TURQUIE</option>
+<option value="TUVALU">TUVALU</option>
+<option value="UKRAINE">UKRAINE</option>
+<option value="URUGUAY">URUGUAY</option>
+<option value="VANUATU">VANUATU</option>
+<option value="VENEZUELA">VENEZUELA</option>
+<option value="VIET NAM">VIET NAM</option>
+<option value="YEMEN">YEMEN</option>
+<option value="ZAMBIE">ZAMBIE</option>
+<option value="ZIMBABWE">ZIMBABWE</option>
+</select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Type pièce identité<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-number="Le champ _Type_CNIE_Representant doit être un nombre." data-val-required="The _Type_CNIE_Representant field is required." id="typeIdRep" name="_Type_CNIE_Representant" title="Indiquez le type de la pièce d&#39;identité du représentant légal"><option selected="selected" value="0">Selectionnez</option>
+<option value="1">CNIE</option>
+<option value="2">Passeport marocain</option>
+<option value="3">Carte d’immatriculation</option>
+<option value="4">Passeport &#233;tranger</option>
+<option value="5">Carte d’identit&#233; &#233;trang&#232;re</option>
+<option value="6">Autres</option>
+</select>
+                                    <span class="field-validation-valid" data-valmsg-for="_Type_CNIE_Representant" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">N° pièce identité<em class="red">*</em></label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" id="numCnieRep" maxlength="10" name="_Num_CNIE_Representant" onBlur="this.value = ValidateInput(this, 3); ValidateInput(this, 7);" oncopy="return false" onkeypress="return GetMyKeyCode(this,4,1);" onpaste="return false" title="Indiquez le numéro de la pièce d&#39;identité du représentant légal" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Num_CNIE_Representant" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12 dwsx rtlformcb">
+                                    <input data-val="true" data-val-required="The procuration field is required." id="procuration" name="procuration" type="checkbox" value="true" /><input name="procuration" type="hidden" value="false" />
+                                    <label class="col-form-radio" for="procuration">En cas de procuration remplir les renseignements du mandataire</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Renseignements concernant le mandataire  -->
+                    <div id="Mandataire" style=display:none;>
+                        <h1>Renseignements concernant le mandataire <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" title="En cas d’emp&#234;chement, le repr&#233;sentant l&#233;gal d’un mineur peut &#233;tablir une procuration pour autoriser un mandataire (par exemple sa m&#232;re ou un parent proche) &#224; accompagner le mineur. Dans ce cas, c’est le mandataire qui remplit et signe la demande de passeport."></span> :</h1>
+                        <div class="row" id="rowmmandataire" style=display:none;>
+                            <div class="col-sm-12">
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12 dwsx rtlformcb">
+                                    <input type="checkbox" id="mmandataire" name="mmandataire">
+                                    <label style="margin-top:0; margin-bottom:15px" class="col-form-radio" for="mmandataire"> La m&#232;re est le mandataire </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nom</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le nom du mandataire est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="nomMan" maxlength="45" name="_Nom_Mandataire" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le nom du mandataire" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Prenom_Mandataire" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Prénom</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le prénom du mandataire est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39; ]*$" id="prenomMan" maxlength="45" name="_Prenom_Mandataire" onBlur="this.value = ValidateInput(this, 3)" oncopy="return false" onkeypress="return GetMyKeyCode(this,5);" onpaste="return false" title="Indiquez le prénom du mandataire" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Nom_Mandataire" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Nationalité</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-regex="Le pays du mandataire est incorrecte" data-val-regex-pattern="^[a-zA-Z\.\-\&#39;’ ]*$" id="paysMan" name="_Pays_Mandataire" title="Indiquez la nationalité du mandataire"><option value="AFGHANISTAN">AFGHANISTAN</option>
+<option value="AFRIQUE DU SUD">AFRIQUE DU SUD</option>
+<option value="ALBANIE">ALBANIE</option>
+<option value="ALGERIE">ALGERIE</option>
+<option value="ALLEMAGNE">ALLEMAGNE</option>
+<option value="ANDORRE">ANDORRE</option>
+<option value="ANGOLA">ANGOLA</option>
+<option value="ANTIGUA-ET-BARBUDA">ANTIGUA-ET-BARBUDA</option>
+<option value="ARABIE SAOUDITE">ARABIE SAOUDITE</option>
+<option value="ARGENTINE">ARGENTINE</option>
+<option value="ARMENIE">ARMENIE</option>
+<option value="AUSTRALIE">AUSTRALIE</option>
+<option value="AUTRICHE">AUTRICHE</option>
+<option value="AZERBAIDJAN">AZERBAIDJAN</option>
+<option value="BAHAMAS">BAHAMAS</option>
+<option value="BAHREIN">BAHREIN</option>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="BARBADE">BARBADE</option>
+<option value="BELGIQUE">BELGIQUE</option>
+<option value="BELIZE">BELIZE</option>
+<option value="BENIN">BENIN</option>
+<option value="BHOUTAN">BHOUTAN</option>
+<option value="BIELORUSSIE">BIELORUSSIE</option>
+<option value="BOLIVIE">BOLIVIE</option>
+<option value="BOSNIE-HERZEGOVINE">BOSNIE-HERZEGOVINE</option>
+<option value="BOTSWANA">BOTSWANA</option>
+<option value="BRESIL">BRESIL</option>
+<option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option>
+<option value="BULGARIE">BULGARIE</option>
+<option value="BURKINA FASO">BURKINA FASO</option>
+<option value="BURUNDI">BURUNDI</option>
+<option value="CAMBODGE">CAMBODGE</option>
+<option value="CAMEROUN">CAMEROUN</option>
+<option value="CANADA">CANADA</option>
+<option value="CAP-VERT">CAP-VERT</option>
+<option value="CHILI">CHILI</option>
+<option value="CHINE">CHINE</option>
+<option value="CHYPRE">CHYPRE</option>
+<option value="COLOMBIE">COLOMBIE</option>
+<option value="COMORES">COMORES</option>
+<option value="CONGO">CONGO</option>
+<option value="COREE DU NORD">COREE DU NORD</option>
+<option value="COREE DU SUD">COREE DU SUD</option>
+<option value="COSTA RICA">COSTA RICA</option>
+<option value="COTE D’IVOIRE">COTE D’IVOIRE</option>
+<option value="CROATIE">CROATIE</option>
+<option value="CUBA">CUBA</option>
+<option value="DANEMARK">DANEMARK</option>
+<option value="DJIBOUTI">DJIBOUTI</option>
+<option value="DOMINIQUE">DOMINIQUE</option>
+<option value="EGYPTE">EGYPTE</option>
+<option value="EMIRATS ARABES UNIS">EMIRATS ARABES UNIS</option>
+<option value="EQUATEUR">EQUATEUR</option>
+<option value="ERYTHREE">ERYTHREE</option>
+<option value="ESPAGNE">ESPAGNE</option>
+<option value="ESTONIE">ESTONIE</option>
+<option value="ETATS-UNIS D&#39;AMERIQUE">ETATS-UNIS D&#39;AMERIQUE</option>
+<option value="ETHIOPIE">ETHIOPIE</option>
+<option value="FIDJI">FIDJI</option>
+<option value="FINLANDE">FINLANDE</option>
+<option value="FRANCE">FRANCE</option>
+<option value="GABON">GABON</option>
+<option value="GAMBIE">GAMBIE</option>
+<option value="GEORGIE">GEORGIE</option>
+<option value="GHANA">GHANA</option>
+<option value="GIBRALTAR">GIBRALTAR</option>
+<option value="GRECE">GRECE</option>
+<option value="GRENADE">GRENADE</option>
+<option value="GUATEMALA">GUATEMALA</option>
+<option value="GUINEE">GUINEE</option>
+<option value="GUINEE EQUATORIALE">GUINEE EQUATORIALE</option>
+<option value="GUINEE-BISSAU">GUINEE-BISSAU</option>
+<option value="GUYANA">GUYANA</option>
+<option value="HAITI">HAITI</option>
+<option value="HONDURAS">HONDURAS</option>
+<option value="HONGRIE">HONGRIE</option>
+<option value="ILES MARSHALL">ILES MARSHALL</option>
+<option value="ILES SALOMON">ILES SALOMON</option>
+<option value="INDE">INDE</option>
+<option value="INDONESIE">INDONESIE</option>
+<option value="IRAK">IRAK</option>
+<option value="IRAN">IRAN</option>
+<option value="IRLANDE">IRLANDE</option>
+<option value="ISLANDE">ISLANDE</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALIE">ITALIE</option>
+<option value="JAMAIQUE">JAMAIQUE</option>
+<option value="JAPON">JAPON</option>
+<option value="JORDANIE">JORDANIE</option>
+<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+<option value="KENYA">KENYA</option>
+<option value="KIRGHIZISTAN">KIRGHIZISTAN</option>
+<option value="KIRIBATI">KIRIBATI</option>
+<option value="KOWEIT">KOWEIT</option>
+<option value="LAOS">LAOS</option>
+<option value="LESOTHO">LESOTHO</option>
+<option value="LETTONIE">LETTONIE</option>
+<option value="LIBAN">LIBAN</option>
+<option value="LIBERIA">LIBERIA</option>
+<option value="LIBYE">LIBYE</option>
+<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+<option value="LITUANIE">LITUANIE</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MACEDOINE">MACEDOINE</option>
+<option value="MADAGASCAR">MADAGASCAR</option>
+<option value="MALAISIE">MALAISIE</option>
+<option value="MALAWI">MALAWI</option>
+<option value="MALDIVES">MALDIVES</option>
+<option value="MALI">MALI</option>
+<option value="MALTE">MALTE</option>
+<option selected="selected" value="MAROC">MAROC</option>
+<option value="MAURICE">MAURICE</option>
+<option value="MAURITANIE">MAURITANIE</option>
+<option value="MEXIQUE">MEXIQUE</option>
+<option value="MICRONESIE">MICRONESIE</option>
+<option value="MOLDAVIE">MOLDAVIE</option>
+<option value="MONACO">MONACO</option>
+<option value="MONGOLIE">MONGOLIE</option>
+<option value="MONTENEGRO">MONTENEGRO</option>
+<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+<option value="MYANMAR">MYANMAR</option>
+<option value="NAMIBIE">NAMIBIE</option>
+<option value="NAURU">NAURU</option>
+<option value="NEPAL">NEPAL</option>
+<option value="NICARAGUA">NICARAGUA</option>
+<option value="NIGER">NIGER</option>
+<option value="NIGERIA">NIGERIA</option>
+<option value="NORVEGE">NORVEGE</option>
+<option value="NOUVELLE-ZELANDE">NOUVELLE-ZELANDE</option>
+<option value="OMAN">OMAN</option>
+<option value="OUGANDA">OUGANDA</option>
+<option value="OUZBEKISTAN">OUZBEKISTAN</option>
+<option value="PAKISTAN">PAKISTAN</option>
+<option value="PALAOS">PALAOS</option>
+<option value="PALESTINE">PALESTINE</option>
+<option value="PANAMA">PANAMA</option>
+<option value="PAPOUASIE-NOUVELLE-GUINEE">PAPOUASIE-NOUVELLE-GUINEE</option>
+<option value="PARAGUAY">PARAGUAY</option>
+<option value="PAYS-BAS">PAYS-BAS</option>
+<option value="PEROU">PEROU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="POLOGNE">POLOGNE</option>
+<option value="PORTUGAL">PORTUGAL</option>
+<option value="QATAR">QATAR</option>
+<option value="REPUBLIQUE CENTRAFRICAINE">REPUBLIQUE CENTRAFRICAINE</option>
+<option value="REPUBLIQUE DEMOCRATIQUE DU CONGO">REPUBLIQUE DEMOCRATIQUE DU CONGO</option>
+<option value="REPUBLIQUE DOMINICAINE">REPUBLIQUE DOMINICAINE</option>
+<option value="REPUBLIQUE TCHEQUE">REPUBLIQUE TCHEQUE</option>
+<option value="ROUMANIE">ROUMANIE</option>
+<option value="ROYAUME-UNI">ROYAUME-UNI</option>
+<option value="RUSSIE">RUSSIE</option>
+<option value="RWANDA">RWANDA</option>
+<option value="SAINTE-LUCIE">SAINTE-LUCIE</option>
+<option value="SAINT-KITTS-ET-NEVIS">SAINT-KITTS-ET-NEVIS</option>
+<option value="SAINT-MARIN">SAINT-MARIN</option>
+<option value="SAINT-VINCENT-ET-LES GRENADINES">SAINT-VINCENT-ET-LES GRENADINES</option>
+<option value="SALVADOR">SALVADOR</option>
+<option value="SAMOA">SAMOA</option>
+<option value="SAO TOME-ET-PRINCIPE">SAO TOME-ET-PRINCIPE</option>
+<option value="SENEGAL">SENEGAL</option>
+<option value="SERBIE">SERBIE</option>
+<option value="SEYCHELLES">SEYCHELLES</option>
+<option value="SIERRA LEONE">SIERRA LEONE</option>
+<option value="SINGAPOUR">SINGAPOUR</option>
+<option value="SLOVAQUIE">SLOVAQUIE</option>
+<option value="SLOVENIE">SLOVENIE</option>
+<option value="SOMALIE">SOMALIE</option>
+<option value="SOUDAN">SOUDAN</option>
+<option value="SRI LANKA">SRI LANKA</option>
+<option value="SUEDE">SUEDE</option>
+<option value="SUISSE">SUISSE</option>
+<option value="SURINAME">SURINAME</option>
+<option value="SWAZILAND">SWAZILAND</option>
+<option value="SYRIE">SYRIE</option>
+<option value="TADJIKISTAN">TADJIKISTAN</option>
+<option value="TANZANIE">TANZANIE</option>
+<option value="TCHAD">TCHAD</option>
+<option value="THAILANDE">THAILANDE</option>
+<option value="TIMOR LESTE">TIMOR LESTE</option>
+<option value="TOGO">TOGO</option>
+<option value="TONGA">TONGA</option>
+<option value="TRINITE-ET-TOBAGO">TRINITE-ET-TOBAGO</option>
+<option value="TUNISIE">TUNISIE</option>
+<option value="TURKMENISTAN">TURKMENISTAN</option>
+<option value="TURQUIE">TURQUIE</option>
+<option value="TUVALU">TUVALU</option>
+<option value="UKRAINE">UKRAINE</option>
+<option value="URUGUAY">URUGUAY</option>
+<option value="VANUATU">VANUATU</option>
+<option value="VENEZUELA">VENEZUELA</option>
+<option value="VIET NAM">VIET NAM</option>
+<option value="YEMEN">YEMEN</option>
+<option value="ZAMBIE">ZAMBIE</option>
+<option value="ZIMBABWE">ZIMBABWE</option>
+</select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">Type pièce identité</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" data-toggle="tooltip" data-val="true" data-val-number="Le champ _Type_CNIE_Mandataire doit être un nombre." data-val-required="The _Type_CNIE_Mandataire field is required." id="typeIdMan" name="_Type_CNIE_Mandataire" title="Indiquez le type de la pièce d&#39;identité du mandataire"><option selected="selected" value="0">Selectionnez</option>
+<option value="1">CNIE</option>
+<option value="2">Passeport marocain</option>
+<option value="3">Carte d’immatriculation</option>
+<option value="4">Passeport &#233;tranger</option>
+<option value="5">Carte d’identit&#233; &#233;trang&#232;re</option>
+<option value="6">Autres</option>
+</select>
+                                    <span class="field-validation-valid" data-valmsg-for="_Type_CNIE_Mandataire" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-3 col-form-label pr">N° pièce identité</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" data-toggle="tooltip" id="numCnieMan" maxlength="10" name="_Num_CNIE_Mandataire" onBlur="this.value = ValidateInput(this, 3); ValidateInput(this, 7);" oncopy="return false" onkeypress="return GetMyKeyCode(this,4,1);" onpaste="return false" title="Indiquez le numéro de la pièce d&#39;identité du mandataire" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="_Num_CNIE_Mandataire" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Captcha Here-->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="col-sm-3 col-form-label pr">Captcha<em class="red">*</em></label>
+                            <div class="col-sm-9">
+                                
+                                <img id="imgCaptcha" src="/FormDemande/GetCaptchaImage" />
+                                <button id="refreshCaptchaBtn" type="button" class="btn-xs btn-default" onclick="refreshCaptcha();" dir="ltr"><i class="fa fa-refresh"></i> Rafra&#238;chir </button>
+                                <input class="form-control" id="CaptchaText" name="CaptchaText" type="text" value="" />
+                                
+                                <span class="field-validation-valid" data-valmsg-for="_CaptchaError" data-valmsg-replace="true"></span>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12 text-center">
+                            <button class="btn btn-Valider" type="submit" dir="ltr"><i class="fa fa-share"></i>Valider  </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</form>    </div>
+</div>
+<!-- Modal -->
+<div id="ModalTuteurTestamentaire" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Tuteur Testamentaire</h4>
+            </div>
+            <div class="modal-body">
+                    <p>
+                        Le père peut désigner un tuteur testamentaire à son enfant interdit ou à naître.<br />
+                        Si le père décédé a désigné, de son vivant, un tuteur testamentaire, la mission de celui-ci se limite à suivre la gestion, par la mère, des affaires du mineur soumis à la tutelle et à saisir la justice, le cas échéant.
+                    </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="ModalKafil" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Kafil</h4>
+            </div>
+            <div class="modal-body">
+                    <p>
+                        La personne (Kafil) assurant la prise en charge d’un enfant abandonné (Kafala) peut quitter le territoire marocain en compagnie de cet enfant en vue de s’établir de manière permanente à l’étranger avec l’autorisation du juge des tutelles. Il est donc nécessaire d’obtenir cette autorisation du juge des tutelles pour pouvoir demander la délivrance d’un passeport à l’enfant pris en charge.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="ModalJuge" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Juge</h4>
+            </div>
+            <div class="modal-body">
+                <p> Juge </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="ModalTuteurDatif" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Tuteur Datif</h4>
+            </div>
+            <div class="modal-body">
+                    <p>
+                        Le tuteur datif est la personne désignée par le tribunal pour veiller sur les affaires du mineur à défaut de père, de mère et de tuteur testamentaire.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="ModalAutre" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Autre</h4>
+            </div>
+            <div class="modal-body">
+                    <p>
+                        Dans le cas où un mineur est placé sous la protection effective d'une personne ou d'une institution, ladite personne ou institution est considérée comme son représentant légal en ce qui concerne ses affaires personnelles, en attendant que le juge lui désigne un tuteur datif.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/jqbtk.min.js"></script>
+<script src="/js/tooltipster.bundle.min.js"></script>
+<script src="/js/FormDemande.js"></script>
+<script type="text/javascript">
+    function refreshCaptcha() {
+        $("#imgCaptcha").attr('src', '/FormDemande/GetCaptchaImage');
+    }
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#CaptchaInputText").addClass("form-control")
+
+        if ($("#pinconnu").is(':checked') === true) {
+            $("#nomPere").prop('disabled', true);
+            $("#prenomPere").prop('disabled', true);
+            $("#paysPere").prop('disabled', true);
+            $("#typeIdPere").prop('disabled', true);
+            $("#numCniePere").prop('disabled', true);
+
+            /* add */
+
+            if ($("#ddlQualiteRep").val() == 1) {
+                $("#nomRep").val('');
+                $("#nomRep").css("border", "");
+                $("#nomRep").next('span').removeClass('field-validation-error')
+                $("#nomRep").next('span').addClass('field-validation-valid');
+                $("#nomRep").next('span').empty();
+                $("#prenomRep").val('');
+                $("#prenomRep").css("border", "");
+                $("#prenomRep").next('span').removeClass('field-validation-error')
+                $("#prenomRep").next('span').addClass('field-validation-valid');
+                $("#prenomRep").next('span').empty();
+                $("#paysRep").val('MAROC');
+                $("#paysRep").trigger('change');
+                $("#typeIdRep").val('0');
+                $("#typeIdRep").css("border", "");
+                $("#typeIdRep").next('span').removeClass('field-validation-error')
+                $("#typeIdRep").next('span').addClass('field-validation-valid');
+                $("#typeIdRep").next('span').empty();
+                $("#numCnieRep").val('');
+                $("#numCnieRep").css("border", "");
+                $("#numCnieRep").next('span').removeClass('field-validation-error')
+                $("#numCnieRep").next('span').addClass('field-validation-valid');
+                $("#numCnieRep").next('span').empty();
+                $("#ddlQualiteRep").val('0');
+            }
+            $("#ddlQualiteRep option[value=1]").remove();
+        }
+
+        if ($("#minconnu").is(':checked') === true) {
+            $("#nomMere").prop('disabled', true);
+            $("#prenomMere").prop('disabled', true);
+            $("#paysMere").prop('disabled', true);
+            $("#typeIdMere").prop('disabled', true);
+            $("#numCnieMere").prop('disabled', true);
+            $("#mmandataire").prop('disabled', true);
+            /* add */
+            if ($("#ddlQualiteRep").val() == 2) {
+                $("#nomRep").val('');
+                $("#nomRep").css("border", "");
+                $("#nomRep").next('span').removeClass('field-validation-error')
+                $("#nomRep").next('span').addClass('field-validation-valid');
+                $("#nomRep").next('span').empty();
+                $("#prenomRep").val('');
+                $("#prenomRep").css("border", "");
+                $("#prenomRep").next('span').removeClass('field-validation-error')
+                $("#prenomRep").next('span').addClass('field-validation-valid');
+                $("#prenomRep").next('span').empty();
+                $("#paysRep").val('MAROC');
+                $("#paysRep").trigger('change');
+                $("#typeIdRep").val('0');
+                $("#typeIdRep").css("border", "");
+                $("#typeIdRep").next('span').removeClass('field-validation-error')
+                $("#typeIdRep").next('span').addClass('field-validation-valid');
+                $("#typeIdRep").next('span').empty();
+                $("#numCnieRep").val('');
+                $("#numCnieRep").css("border", "");
+                $("#numCnieRep").next('span').removeClass('field-validation-error')
+                $("#numCnieRep").next('span').addClass('field-validation-valid');
+                $("#numCnieRep").next('span').empty();
+                $("#ddlQualiteRep").val('0');
+            }
+            $("#ddlQualiteRep option[value=2]").remove();
+        }
+
+        if ($(".RadioRaison:checked").val() == '2') {
+            $("#RadioNoCodeTimbre").hide();
+        }
+
+        $('input[name=_Nom_Pere_FR]').change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 1) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+        });
+        $('input[name=_Prenom_Pere_FR]').change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 1) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+
+        });
+        $("#paysPere").change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 1) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+        });
+        $("#typeIdPere").change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 1) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+        });
+        $('input[name=_Num_CNIE_Pere]').change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 1) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+        });
+
+
+        $('input[name=_Nom_Mere_FR]').change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 2) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+            if ($("#mmandataire").is(":checked")) {
+                $("#mmandataire").attr('checked', false).trigger("click");
+            }
+        });
+        $('input[name=_Prenom_Mere_FR]').change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 2) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+
+            if ($("#mmandataire").is(":checked")) {
+                $("#mmandataire").attr('checked', false).trigger("click");
+            };
+
+        });
+        $("#paysMere").change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 2) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+            if ($("#mmandataire").is(":checked")) {
+                $("#mmandataire").attr('checked', false).trigger("click");
+            };
+        });
+        $("#typeIdMere").change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 2) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+            if ($("#mmandataire").is(":checked")) {
+                $("#mmandataire").attr('checked', false).trigger("click");
+            };
+        });
+        $('input[name=_Num_CNIE_Mere]').change(function () {
+            if ($('select[name="_Code_Qualite_Representant"] option:selected').val() == 2) {
+                $('select[name="_Code_Qualite_Representant"]').val("0").trigger('change');
+            };
+            if ($("#mmandataire").is(":checked")) {
+                $("#mmandataire").attr('checked', false).trigger("click");
+            };
+        });
+
+
+        //session end
+        var sessionTimeoutWarning = 30 -1;
+        var sTimeout = parseInt(sessionTimeoutWarning) * 60 * 1000;
+        setTimeout(
+            function () {
+                $('#ModalSession').modal('show');
+            }, sTimeout);
+
+        $('#ModalSession').on('hidden.bs.modal', function () {
+            window.location.href = window.location.href;
+        });
+    });
+</script>
+
+
+
+
+                    <!------ Accès rapides ------>
+                    <div class="col-lg-12">
+                        <div class="AccesRapides">
+                            <h1>Accès rapides</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="BoxAR">
+                            <a href="/Home/Faq">
+                                <img src="/images/boxar-1.png" width="70" class="displayed" />
+                                <p>Questions fréquentes</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="BoxAR">
+                            <a href="/Home/Reglementation">
+                                <img src="/images/boxar-2.png" width="70" class="displayed" />
+                                <p>Réglementation</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="BoxAR">
+                            <a href="/PDF/NORMES POUR LES PHOTOGRAPHIES.pdf">
+                                <img src="/images/boxar-3.png" width="70" class="displayed" />
+                                <p>Normes des photographies</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="BoxAR">
+                            <a href="/Home/LiensUtiles">
+                                <img src="/images/boxar-4.png" width="70" class="displayed" />
+                                <p>Liens utiles</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Plan du site</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2><i class="fa fa-caret-right"></i> S’informer</h2>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Conditions de délivrance</a></h5>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><a href="/ConditionsDelivrance/DelAuMaroc"><i class="fa fa-angle-right"></i> Au maroc</a></p>
+                                        <p><a href="/ConditionsDelivrance/DelAlEtranger"><i class="fa fa-angle-right"></i> A l'étranger</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Procédures</a></h5>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><a href="/Procedure/GuideAuMaroc"><i class="fa fa-angle-right"></i> Au maroc</a></p>
+                                        <p><a href="/Procedure/GuideAlEtranger"><i class="fa fa-angle-right"></i> A l'étranger</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5><a href="/Home/PiecesAuMaroc">Pièces à fournir</a></h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5><a href="/Home/Reglementation">Réglementation</a></h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="last"><a target="_blank" href="/PDF/NORMES POUR LES PHOTOGRAPHIES.pdf">Normes des photographies</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2><i class="fa fa-caret-right"></i> Demander votre passeport</h2>
+                        <ul>
+                            <li><a href="/FormDemande/FormDemande">Saisie de la demande</a></li>
+                            <li><a href="/SuiviDemande/SuiviDemande">Suivi de la demande</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2><i class="fa fa-caret-right"></i> Infos pratiques</h2>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5><a data-toggle="collapse" data-parent="#accordion" href="#collapse6">A qui s'adresser ?</a></h5>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><a href="/AquiSadresser/AuMaroc"><i class="fa fa-angle-right"></i> Au maroc</a></p>
+                                        <p><a href="/AquiSadresser/AlEtranger"><i class="fa fa-angle-right"></i> A l'étranger</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="last"><a href="/Home/Faq">F.A.Q</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal Session TimeOut-->
+    <div id="ModalSession" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content panel-warning">
+                <div class="modal-header panel-heading">
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <p> Le formulaire a expiré ...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" style="display: none;"><img src="/images/loading.gif" id="loading-indicator" /></div>
+    <script type="text/javascript">
+        document.body.style.zoom = "100%"
+        $("#fontPlusBtn").click(function () {
+            var zoom = document.body.style.zoom.substring(0, document.body.style.zoom.length - 1)
+            document.body.style.zoom = (parseInt(zoom) + 5).toString() + "%"
+        });
+        $("#fontMinusBtn").click(function () {
+            var zoom = document.body.style.zoom.substring(0, document.body.style.zoom.length - 1)
+            document.body.style.zoom = (parseInt(zoom) - 5).toString() + "%"
+        });
+        $('#searchForm').on('submit', function (e) {
+            // validation code here
+            if ($("#searchKey").val() == '') {
+                e.preventDefault();
+            }
+        });
+        jquery(document).ready(function () { init_Home(); });
+    </script>
+</body>
+</html>

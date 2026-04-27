@@ -1,0 +1,53 @@
+{
+  "id": "www.consulat.ma_index.php_fr_trouver-un-consulat",
+  "url": "https://www.consulat.ma/index.php/fr/trouver-un-consulat",
+  "final_url": "https://www.consulat.ma/index.php/fr/trouver-un-consulat",
+  "domain": "www.consulat.ma",
+  "title": "Annuaire consulaire | Prestations Consulaires",
+  "category": "service_public",
+  "page_type": "annuaire",
+  "language": "fr",
+  "priority": "moyenne",
+  "responsible_entity": "SERVICE_PUBLIC",
+  "submission_place": null,
+  "fees": null,
+  "processing_time": "8h",
+  "steps": [
+    "Demander une information"
+  ],
+  "required_documents": [],
+  "eligibility_conditions": [],
+  "content_sections": [
+    "# royaume du maroc ministère des affaires étrangères de la Coopération Africaine et des Marocains Résidant à l'Étranger",
+    "## Annuaire consulaire",
+    "- Accueil",
+    "- Annuaire consulaire",
+    "## Trouver un consulat ou un service consulaire",
+    "### Vous avez besoin de contacter les services consulaires?",
+    "##### Pour toute information, réclamation, remarque ou suggestion, vous pouvez contacter le Centre d’Appels ci ou envoyer votre demande via le Portail ci-après:",
+    "## Appeler le Centre d'Appels",
+    "## Accéder au Portail",
+    "24/24, 7j/7j, envoyer et suivre votre demande d'informations,votre remarque,ou votre suggestion au centre d'appels via le lien suivant",
+    "- Prestations consulaires",
+    "- A propos",
+    "- Trouver un consulat",
+    "- diplomatie.ma",
+    "- Plan du site",
+    "- MENTIONS LÉGALES",
+    "Copyright 2018 © Ministère des Affaires Étrangères et de la Coopération Internationale. Tous droits réservés.",
+    "- Disponible de 8h à 20h Heure au Maroc",
+    "- Appeler le Centre d'Appels",
+    "- Demander une information"
+  ],
+  "keywords": [
+    "maroc",
+    "consulat"
+  ],
+  "content": "# royaume du maroc ministère des affaires étrangères de la Coopération Africaine et des Marocains Résidant à l'Étranger\n## Annuaire consulaire\n- Accueil\n- Annuaire consulaire\n## Trouver un consulat ou un service consulaire\n### Vous avez besoin de contacter les services consulaires?\n##### Pour toute information, réclamation, remarque ou suggestion, vous pouvez contacter le Centre d’Appels ci ou envoyer votre demande via le Portail ci-après:\n## Appeler le Centre d'Appels\n## Accéder au Portail\n24/24, 7j/7j, envoyer et suivre votre demande d'informations,votre remarque,ou votre suggestion au centre d'appels via le lien suivant\n- Prestations consulaires\n- A propos\n- Trouver un consulat\n- diplomatie.ma\n- Plan du site\n- MENTIONS LÉGALES\nCopyright 2018 © Ministère des Affaires Étrangères et de la Coopération Internationale. Tous droits réservés.\n- Disponible de 8h à 20h Heure au Maroc\n- Appeler le Centre d'Appels\n- Demander une information",
+  "content_length": 945,
+  "list_items_count": 11,
+  "http_status": 200,
+  "status": "success",
+  "skip_reason": null,
+  "fetched_at": "2026-04-27T09:01:00.385918+00:00"
+}

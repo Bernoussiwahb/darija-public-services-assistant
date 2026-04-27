@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "description": "URLs officielles marocaines pour DarijaAssist - extension 2026-04-27",
+    "categories": ["cnss", "anam", "service_public", "cnie"],
+    "total_urls": 45,
+    "date_collecte": "2026-04-27"
+  },
+  "data": {
+    "cnss": [
+      {
+        "url": "https://www.cnss.ma/fr/content/immatriculation",
+        "titre": "Immatriculation CNSS",
+        "type": "procedure",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.cnss.ma/fr/content/allocations-familiales",
+        "titre": "Allocations familiales CNSS",
+        "type": "prestation",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.cnss.ma/fr/content/pension-de-vieillesse",
+        "titre": "Pension de vieillesse CNSS",
+        "type": "prestation",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://cnss.ma/fr/content/quand-dois-je-d%C3%A9poser-mon-dossier-de-pension-de-vieillesse",
+        "titre": "Quand deposer le dossier de pension de vieillesse",
+        "type": "faq",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.macnss.ma/",
+        "titre": "MaCNSS",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.macnss.ma/taawidaty",
+        "titre": "TAAWIDATY via MaCNSS",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://taawidaty.cnss.ma/",
+        "titre": "Portail TAAWIDATY CNSS",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.damancom.ma/",
+        "titre": "DAMANCOM",
+        "type": "portail_entreprise",
+        "langue": "fr",
+        "priorite": "moyenne"
+      }
+    ],
+    "anam": [
+      {
+        "url": "https://anam.ma/",
+        "titre": "Accueil ANAM",
+        "type": "information",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://anam.ma/anam",
+        "titre": "Portail ANAM",
+        "type": "information",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://anam.ma/anam/amo/",
+        "titre": "AMO",
+        "type": "reglementation",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://anam.ma/anam/prestations-garanties-par-lamo/",
+        "titre": "Prestations garanties par l'AMO",
+        "type": "prestation",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://anam.ma/anam/espace-prestataires-de-soins/",
+        "titre": "Espace Prestataires de Soins",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://anam.ma/anam/regulation/presentation-regulation/",
+        "titre": "Presentation Regulation",
+        "type": "information",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://anam.ma/anam/regulation/referentiel-des-dispositifs-medicaux/",
+        "titre": "Referentiel des dispositifs medicaux",
+        "type": "referentiel",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://anam.ma/anam/regulation/tarification-nationale-de-reference/",
+        "titre": "Tarification nationale de reference",
+        "type": "referentiel",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://anam.ma/anam/regulation/guide-des-maladies-ald-alc/",
+        "titre": "Guide des maladies ALD et ALC",
+        "type": "guide",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://anam.ma/anam/reglementation/presentation-reglementation/",
+        "titre": "Presentation Reglementation",
+        "type": "reglementation",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://anam.ma/anam/reclamations/",
+        "titre": "Reclamations ANAM",
+        "type": "procedure",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://anam.ma/anam/commission-de-transparence/",
+        "titre": "Commission de Transparence",
+        "type": "information",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://anam.ma/anam/actualites/",
+        "titre": "Actualites ANAM",
+        "type": "actualite",
+        "langue": "fr",
+        "priorite": "faible"
+      },
+      {
+        "url": "https://inpe.anam.ma/",
+        "titre": "Octroi du code INPE",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      }
+    ],
+    "service_public": [
+      {
+        "url": "https://maroc.ma/fr",
+        "titre": "Portail officiel du Maroc",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.maroc.ma/fr/services-numeriques/grand-public",
+        "titre": "Services numeriques - Grand public",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.maroc.ma/fr/services-numeriques/entreprises-professionnels",
+        "titre": "Services numeriques - Entreprises et professionnels",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://maroc.ma/fr/taxonomy/term/240",
+        "titre": "Services citoyens",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://maroc.ma/fr/taxonomy/term/1",
+        "titre": "Grand public",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://www.idarati.ma/",
+        "titre": "Idarati",
+        "type": "portail_procedures",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.mmsp.gov.ma/fr/nos-services/portail-national-idarati",
+        "titre": "Presentation officielle du portail Idarati",
+        "type": "information",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://www.watiqa.ma/index.php?page=citoyen.FormulaireCommande",
+        "titre": "Watiqa - Commande de documents administratifs",
+        "type": "procedure",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.watiqa.ma/index.php5?page=citoyen.SuiviCommande",
+        "titre": "Watiqa - Suivi de commande",
+        "type": "suivi",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://www.passeport.ma/",
+        "titre": "Passeport biometrique",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.passeport.ma/FormDemande/FormDemande",
+        "titre": "Demande de passeport biometrique",
+        "type": "procedure",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.passeport.ma/Procedure/GuideAuMaroc",
+        "titre": "Guide de demande de passeport au Maroc",
+        "type": "guide",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.passeport.ma/Home/PiecesAuMaroc",
+        "titre": "Pieces a fournir pour le passeport",
+        "type": "pieces_a_fournir",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://casierjudiciaire.justice.gov.ma/Accueil.aspx?culture=fr-FR",
+        "titre": "Casier judiciaire en ligne",
+        "type": "procedure",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.consulat.ma/index.php/tfng",
+        "titre": "Prestations consulaires",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://www.consulat.ma/index.php/fr/trouver-un-consulat",
+        "titre": "Annuaire consulaire",
+        "type": "annuaire",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://www.acces-maroc.ma/",
+        "titre": "Acces Maroc - eVisa",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://id.acces-maroc.ma/login",
+        "titre": "Connexion Acces Maroc",
+        "type": "authentification",
+        "langue": "fr",
+        "priorite": "faible"
+      }
+    ],
+    "cnie": [
+      {
+        "url": "https://www.cnie.ma/",
+        "titre": "Portail CNIE",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://www.epolice.ma/",
+        "titre": "E-Police",
+        "type": "portail",
+        "langue": "fr",
+        "priorite": "haute"
+      },
+      {
+        "url": "https://maroc.ma/fr/taxonomy/term/1",
+        "titre": "Maroc.ma - entree CNIE",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://maroc.ma/fr/taxonomy/term/240",
+        "titre": "Maroc.ma - fiche anthropometrique et services citoyens",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "moyenne"
+      },
+      {
+        "url": "https://www.maroc.ma/fr/services-numeriques/grand-public",
+        "titre": "Services numeriques grand public incluant CNIE",
+        "type": "annuaire_services",
+        "langue": "fr",
+        "priorite": "moyenne"
+      }
+    ]
+  }
+}
